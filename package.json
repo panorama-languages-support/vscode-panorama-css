@@ -1,0 +1,14 @@
+{
+    "name": "panorama-css",
+    "displayName": "Panorama CSS Support",
+    "description": "Support for the Panorama subset of CSS3.",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "*"
+    },
+    "contributes": {
+    },
+    "categories": [
+        "Programming Languages"
+    ]
+}
