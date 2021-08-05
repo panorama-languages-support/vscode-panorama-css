@@ -1,0 +1,32 @@
+{
+    "Texture Sampling Normal": {
+        "prefix": "texture-sampling",
+        "body": [
+            "texture-sampling: normal;"
+        ],
+        "description": ""
+    },
+    "Texture Sampling Alpha-Only": {
+        "prefix": "texture-sampling",
+        "body": [
+            "texture-sampling: alpha-only;"
+        ],
+        "description": "Use the texture's alpha data scross all 3 color channels"
+    },
+    
+    "Collapse Visibility": {
+        "prefix": "visibility",
+        "body": [
+            "visibility: collapse;"
+        ],
+        "description": "Panel will not be included in the layout."
+    },
+
+    "Definition": {
+        "prefix": "@define",
+        "body": [
+            "@define ${1}: ${0};"
+        ],
+        "description": "<name>: <value>"
+    }
+}
