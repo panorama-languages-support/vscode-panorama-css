@@ -1,0 +1,65 @@
+{
+    "Flow Children None": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: none;"
+        ],
+        "description": "Children have to position themselves."
+    },
+    "Flow Children Down": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: down;"
+        ],
+        "description": ""
+    },
+    "Flow Children Left": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: left;"
+        ],
+        "description": ""
+    },
+    "Flow Children Up": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: up;"
+        ],
+        "description": ""
+    },
+    "Flow Children Right": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: right;"
+        ],
+        "description": ""
+    },
+    "Flow Children Down & Wrap": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: down-wrap;"
+        ],
+        "description": ""
+    },
+    "Flow Children Left & Wrap": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: left-wrap;"
+        ],
+        "description": ""
+    },
+    "Flow Children Up & Wrap": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: up-wrap;"
+        ],
+        "description": ""
+    },
+    "Flow Children Right & Wrap": {
+        "prefix": "flow-children",
+        "body": [
+            "flow-children: right-wrap;"
+        ],
+        "description": ""
+    }
+}

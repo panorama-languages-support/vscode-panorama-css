@@ -24,10 +24,29 @@
         ],
         "css": {
             "customData": [ "./data/panorama.css-data.json" ]
-        }
+        },
+        "snippets": [
+            {
+                "language": "css",
+                "path": "./snippets/-s2-mix-blend-mode.json"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/gradient.json"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/flow-children.json"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/misc.json"
+            }
+        ]
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "keywords": [
         "panorama",
