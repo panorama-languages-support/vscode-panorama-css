@@ -7,6 +7,9 @@
         "vscode": "*"
     },
     "contributes": {
+        "css": {
+            "customData": [ "./data/panorama.css-data.json" ]
+        }
     },
     "categories": [
         "Programming Languages"

@@ -1,0 +1,1349 @@
+{
+    "version": 1.1,
+    "properties": [
+        {
+            "name": "-s2-mix-blend-mode",
+            "description": "Controls blending mode for the panel. See CSS mix-blend-mode docs on web, except normal for us is with alpha blending.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#-s2-mix-blend-mode"
+                }
+            ]
+        },
+        {
+            "name": "align",
+            "description": "Controls the horizontal and/or vertical alignment of content. First value is the horizontal alignment, and second is the vertical. Both must be present. If you want to change just horizontal or just vertical alignment, use horizontal-align or vertical-align respectively. Defaults to left and top respectively.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#align"
+                }
+            ]
+        },
+        {
+            "name": "animation",
+            "description": "Sets all of the following animation properties in order: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, and animation-fill-mode. Only animation-name and animation-duration are required. animation-name is used to later define a keyframe.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation"
+                }
+            ]
+        },
+        {
+            "name": "animation-delay",
+            "description": "",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-delay"
+                }
+            ]
+        },
+        {
+            "name": "animation-direction",
+            "description": "The direction of the animation regarding time. Defaults to normal.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-direction"
+                }
+            ]
+        },
+        {
+            "name": "animation-duration",
+            "description": "Controls the duration of an animation, in milliseconds (ms) or seconds (s).",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-duration"
+                }
+            ]
+        },
+        {
+            "name": "animation-fill-mode",
+            "description": "Controls the fill mode of an animation.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-fill-mode"
+                }
+            ]
+        },
+        {
+            "name": "animation-iteration-count",
+            "description": "Controls the number of iterations to play for an animation. Alternatively, 'infinite' can be used to constantly play the animation.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-iteration-count"
+                }
+            ]
+        },
+        {
+            "name": "animation-name",
+            "description": "Name of animation to be used for keyframing.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-name"
+                }
+            ]
+        },
+        {
+            "name": "animation-timing-function",
+            "description": "Controls the type of animation to perform. Defaults to ease.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-timing-function"
+                }
+            ]
+        },
+        {
+            "name": "background-color",
+            "description": "Sets the background fill color/gradient/combination for a panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-color"
+                }
+            ]
+        },
+        {
+            "name": "background-image",
+            "description": "Comma separated list of images or movies to draw in the background. Can specify 'none' to not draw a background layer. Combined with background-position, background-size and background-repeat values.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-image"
+                }
+            ]
+        },
+        {
+            "name": "background-img-opacity",
+            "description": "Sets the opacity of the background-image.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-img-opacity"
+                }
+            ]
+        },
+        {
+            "name": "background-position",
+            "description": "Controls the horizontal and vertical placement of the background image, with the format: <left|center|right> <horizontal length> <top|center|bottom> <vertical length>.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-position"
+                }
+            ]
+        },
+        {
+            "name": "background-repeat",
+            "description": "Controls if the background should be repeated in the horizontal and vertical directions.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-repeat"
+                }
+            ]
+        },
+        {
+            "name": "background-size",
+            "description": "Sets the horizontal and vertical dimensions used to draw the background image. Can be set in pixels, percent, 'contains' to size down to panel dimensions or 'auto' preserves the image aspect ratio. By default, set to 'auto' which preveres the image's original size.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-size"
+                }
+            ]
+        },
+        {
+            "name": "blur",
+            "description": "Sets the amount of blur to apply to the panel and all it's children during composition.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#blur"
+                }
+            ]
+        },
+        {
+            "name": "border",
+            "description": "Shorthand for setting panel border. Specify width, style, and color.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border"
+                }
+            ]
+        },
+        {
+            "name": "border-bottom",
+            "description": "Shorthand for setting the bottom panel border. Specify width, style, and color.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom"
+                }
+            ]
+        },
+        {
+            "name": "border-bottom-color",
+            "description": "Specifies border color for the bottom edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-color"
+                }
+            ]
+        },
+        {
+            "name": "border-bottom-left-radius",
+            "description": "Specifies border-radius for bottom-left corner which rounds off border and clips background/foreground content to rounded edge.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-left-radius"
+                }
+            ]
+        },
+        {
+            "name": "border-bottom-right-radius",
+            "description": "Specifies border-radius for bottom-right corner which rounds off border and clips background/foreground content to rounded edge.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-right-radius"
+                }
+            ]
+        },
+        {
+            "name": "border-bottom-style",
+            "description": "Specifies border style for the bottom edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-style"
+                }
+            ]
+        },
+        {
+            "name": "border-bottom-width",
+            "description": "Specifies border width for the bottom edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-width"
+                }
+            ]
+        },
+        {
+            "name": "border-color",
+            "description": "Specifies border color for panel. If a single color value is set it applies to all sides, if 2 are set the first is top/bottom and the second is left/right, if all four are set then they are top, right, bottom, left in order.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-color"
+                }
+            ]
+        },
+        {
+            "name": "border-left",
+            "description": "Shorthand for setting the left panel border. Specify width, style, and color.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-left"
+                }
+            ]
+        },
+        {
+            "name": "border-left-color",
+            "description": "Specifies border color for the left edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-left-color"
+                }
+            ]
+        },
+        {
+            "name": "border-left-style",
+            "description": "Specifies border style for the left edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-left-style"
+                }
+            ]
+        },
+        {
+            "name": "border-left-width",
+            "description": "Specifies border width for the left edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-left-width"
+                }
+            ]
+        },
+        {
+            "name": "border-radius",
+            "description": "Shorthand to set border radius for all corners at once. Border radius rounds off corners of the panel, adjusting the border to smoothly round and also clipping background image/color and contents to the specified elliptical or circular values.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-radius"
+                }
+            ]
+        },
+        {
+            "name": "border-right",
+            "description": "Shorthand for setting the right panel border. Specify width, style, and color.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-right"
+                }
+            ]
+        },
+        {
+            "name": "border-right-color",
+            "description": "Specifies border color for the right edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-right-color"
+                }
+            ]
+        },
+        {
+            "name": "border-right-style",
+            "description": "Specifies border style for the right edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-right-style"
+                }
+            ]
+        },
+        {
+            "name": "border-right-width",
+            "description": "Specifies border width for the right edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-right-width"
+                }
+            ]
+        },
+        {
+            "name": "border-style",
+            "description": "Specifies border style for panel. If a single style value is set it applies to all sides, if 2 are set the first is top/bottom and the second is left/right, if all four are set then they are top, right, bottom, left in order.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-style"
+                }
+            ]
+        },
+        {
+            "name": "border-top",
+            "description": "Shorthand for setting the top panel border. Specify width, style, and color.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top"
+                }
+            ]
+        },
+        {
+            "name": "border-top-color",
+            "description": "Specifies border color for the top edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-color"
+                }
+            ]
+        },
+        {
+            "name": "border-top-left-radius",
+            "description": "Specifies border-radius for top-left corner which rounds off border and clips background/foreground content to rounded edge.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-left-radius"
+                }
+            ]
+        },
+        {
+            "name": "border-top-right-radius",
+            "description": "Specifies border-radius for top-right corner which rounds off border and clips background/foreground content to rounded edge.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-right-radius"
+                }
+            ]
+        },
+        {
+            "name": "border-top-style",
+            "description": "Specifies border style for the top edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-style"
+                }
+            ]
+        },
+        {
+            "name": "border-top-width",
+            "description": "Specifies border width for the top edge of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-width"
+                }
+            ]
+        },
+        {
+            "name": "border-width",
+            "description": "Specifies border width for panel. If a single width value is set it applies to all sides, if 2 are set the first is top/bottom and the second is left/right, if all four are set then they are top, right, bottom, left in order.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-width"
+                }
+            ]
+        },
+        {
+            "name": "box-shadow",
+            "description": "Specifies outer shadows for boxes, or inset shadows/glows.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#box-shadow"
+                }
+            ]
+        },
+        {
+            "name": "brightness",
+            "description": "Sets the brightness that applies to the panel and all it's children during composition. The value is a multiplier on the HSB brightness value.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#brightness"
+                }
+            ]
+        },
+        {
+            "name": "clip",
+            "description": "Specifies a clip region within the panel, where contents will be clipped at render time.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#clip"
+                }
+            ]
+        },
+        {
+            "name": "color",
+            "description": "Sets the foreground fill color/gradient/combination for a panel. This color is the color used to render text within the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#color"
+                }
+            ]
+        },
+        {
+            "name": "context-menu-arrow-position",
+            "description": "Specifies where to point the arrow of a context menu at on this panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#context-menu-arrow-position"
+                }
+            ]
+        },
+        {
+            "name": "context-menu-body-position",
+            "description": "Specifies where to position the body of a context menu relative to this panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#context-menu-body-position"
+                }
+            ]
+        },
+        {
+            "name": "context-menu-position",
+            "description": "Specifies where to position a context menu relative to this panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#context-menu-position"
+                }
+            ]
+        },
+        {
+            "name": "contrast",
+            "description": "Sets the contrast that applies to the panel and all it's children during composition.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#contrast"
+                }
+            ]
+        },
+        {
+            "name": "flow-children",
+            "description": "Controls the direction for the children of the panel to flow.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#flow-children"
+                }
+            ]
+        },
+        {
+            "name": "font-family",
+            "description": "Specifies the font face to use.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#font-family"
+                }
+            ]
+        },
+        {
+            "name": "font-size",
+            "description": "Specifies the target font face height in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#font-size"
+                }
+            ]
+        },
+        {
+            "name": "font-style",
+            "description": "Specifies the font style to use.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#font-style"
+                }
+            ]
+        },
+        {
+            "name": "font-weight",
+            "description": "Specifies the font weight to use.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#font-weight"
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "description": "Sets the height for this panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#height"
+                }
+            ]
+        },
+        {
+            "name": "horizontal-align",
+            "description": "Controls the horizontal alignment of content. To change both this and vertical alignment in one property, use align. Defaults to left.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#horizontal-align"
+                }
+            ]
+        },
+        {
+            "name": "hue-rotation",
+            "description": "Sets the hue rotation to apply to the panel and all it's children during composition. Default of 0.0 means no adjustment, domain is in degrees.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#hue-rotation"
+                }
+            ]
+        },
+        {
+            "name": "img-shadow",
+            "description": "Specifies image shadows. The shadow shape will match the image the panel can generate, and this is only meaningful for images.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#img-shadow"
+                }
+            ]
+        },
+        {
+            "name": "letter-spacing",
+            "description": "Sets the space between letters for text in a string.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#letter-spacing"
+                }
+            ]
+        },
+        {
+            "name": "line-height",
+            "description": "Specifies the line height (distance between top edge of line above and line below) to use for text. By default this is unset and a value that matches the font-size reasonably will be used automatically.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#line-height"
+                }
+            ]
+        },
+        {
+            "name": "margin",
+            "description": "Sets the space between this panel to another panel, in pixels. The properties of all four sides in order are: margin-top, margin-right, margin-bottom, and margin-left.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin"
+                }
+            ]
+        },
+        {
+            "name": "margin-bottom",
+            "description": "Sets the space between the bottom of this panel to the top of another panel, in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin-bottom"
+                }
+            ]
+        },
+        {
+            "name": "margin-left",
+            "description": "Sets the space between the left-side of this panel to the right-side of another panel, in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin-left"
+                }
+            ]
+        },
+        {
+            "name": "margin-right",
+            "description": "Sets the space between the right-side of this panel to the left-side of another panel, in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin-right"
+                }
+            ]
+        },
+        {
+            "name": "margin-top",
+            "description": "Sets the space between the top of this panel to the bottom of another panel, in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin-top"
+                }
+            ]
+        },
+        {
+            "name": "max-height",
+            "description": "Sets the maximum height of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#max-height"
+                }
+            ]
+        },
+        {
+            "name": "max-width",
+            "description": "Sets the maximum width of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#max-width"
+                }
+            ]
+        },
+        {
+            "name": "min-height",
+            "description": "Sets the minimum height of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#min-height"
+                }
+            ]
+        },
+        {
+            "name": "min-width",
+            "description": "Sets the minimum width of the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#min-width"
+                }
+            ]
+        },
+        {
+            "name": "opacity",
+            "description": "Sets the opacity or amount of transparency applied to the panel and all it's children during composition. Default of 1.0 means fully opaque, 0.0 means fully transparent.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity"
+                }
+            ]
+        },
+        {
+            "name": "opacity-mask",
+            "description": "Applies an image as an opacity mask that stretches to the panel bounds and fades out it's content based on the alpha channel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity-mask"
+                }
+            ]
+        },
+        {
+            "name": "opacity-mask-scroll-down",
+            "description": "Overrides opacity-mask when the panel can scroll down, based on the overflow property, or when the height of the content in the panel is larger than the height of its layout.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity-mask-scroll-down"
+                }
+            ]
+        },
+        {
+            "name": "opacity-mask-scroll-up",
+            "description": "Overrides opacity-mask when the panel can scroll up, based on the overflow property.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity-mask-scroll-up"
+                }
+            ]
+        },
+        {
+            "name": "opacity-mask-scroll-up-down",
+            "description": "Overrides opacity-mask when the panel can scroll up and down, based on the overflow property.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity-mask-scroll-up-down"
+                }
+            ]
+        },
+        {
+            "name": "overflow",
+            "description": "Specifies what to do with contents that overflow the available space for the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#overflow"
+                }
+            ]
+        },
+        {
+            "name": "padding",
+            "description": "Sets the space between the content and the edge of the panel, in pixels. The properties of all four sides in order are: padding-top, padding-right, padding-bottom, and padding-left.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding"
+                }
+            ]
+        },
+        {
+            "name": "padding-bottom",
+            "description": "Sets the space between the content and the bottom edge of the panel, in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding-bottom"
+                }
+            ]
+        },
+        {
+            "name": "padding-left",
+            "description": "Sets the space between the content and the left edge of the panel, in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding-left"
+                }
+            ]
+        },
+        {
+            "name": "padding-right",
+            "description": "Sets the space between the content and the right edge of the panel, in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding-right"
+                }
+            ]
+        },
+        {
+            "name": "padding-top",
+            "description": "Sets the space between the content and the top edge of the panel, in pixels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding-top"
+                }
+            ]
+        },
+        {
+            "name": "perspective",
+            "description": "Sets the perspective depth space available for children of the panel. Default of 1000 would mean that children at 1000px zpos are right at the viewers eye, -1000px are just out of view distance faded to nothing.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#perspective"
+                }
+            ]
+        },
+        {
+            "name": "perspective-origin",
+            "description": "Sets the perspective origin which will be used when transforming children of this panel. This can be thought of as the camera x/y position relative to the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#perspective-origin"
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "description": "Sets the x, y, and z position for a panel, in pixels or percentage. Must not be in a flowing layout.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#position"
+                }
+            ]
+        },
+        {
+            "name": "pre-transform-rotate2d",
+            "description": "Sets 2 dimensional rotation degrees that apply to the quad for this panel prior to 3 dimensional transforms. This rotation applies without perspective and leaves the panel centered at the same spot as it started.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#pre-transform-rotate2d"
+                }
+            ]
+        },
+        {
+            "name": "pre-transform-scale2d",
+            "description": "Sets 2 dimensional X/Y scale factors that apply to the quad for this panel prior to 3 dimensional transforms. This scaling applies without perspective and leaves the panel centered at the same spot as it started. Default of 1.0 means no scaling, 0.5 would be half size.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#pre-transform-scale2d"
+                }
+            ]
+        },
+        {
+            "name": "saturation",
+            "description": "Sets the amount of saturation to apply to the panel and all it's children during composition. Default of 1.0 means no adjustment, 0.0 means fully desaturated to gray scale, greater than 1.0 means over-saturation.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#saturation"
+                }
+            ]
+        },
+        {
+            "name": "sound",
+            "description": "Specifies a sound name to play when this selector is applied.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#sound"
+                }
+            ]
+        },
+        {
+            "name": "sound-out",
+            "description": "Specifies a sound name to play when this selector is removed.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#sound-out"
+                }
+            ]
+        },
+        {
+            "name": "sound-trans",
+            "description": "Specifies a sound name to play when this selector is applied and the value was previously set.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#sound-trans"
+                }
+            ]
+        },
+        {
+            "name": "text-align",
+            "description": "Specifies the horizontal text alignment for text within this panel, defaults to left.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-align"
+                }
+            ]
+        },
+        {
+            "name": "text-decoration",
+            "description": "Specifies the decoration for text within this panel, defaults to none.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-decoration"
+                }
+            ]
+        },
+        {
+            "name": "text-overflow",
+            "description": "Controls truncation of text that doesn't fit in a panel. 'clip' means to simply truncate (on char boundaries), 'ellipsis' means to end with '...', and 'shrink' means lower the font size to fit. 'noclip' allows the text to overflow based on the 'overflow' style. Default to ellipsis.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-overflow"
+                }
+            ]
+        },
+        {
+            "name": "text-shadow",
+            "description": "Specifies text shadows. The shadow shape will match the text the panel can generate,and this is only meaningful for labels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-shadow"
+                }
+            ]
+        },
+        {
+            "name": "text-shadow-fast",
+            "description": "Specifies basic text drop shadows for fast rendering. Only meaningful for labels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-shadow-fast"
+                }
+            ]
+        },
+        {
+            "name": "text-transform",
+            "description": "Specifies the transform for text within this panel, defaults to none.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-transform"
+                }
+            ]
+        },
+        {
+            "name": "texture-sampling",
+            "description": "Controls texture sampling mode for the panel. Set to alpha-only to use the textures alpha data across all 3 color channels.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#texture-sampling"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-arrow-position",
+            "description": "Specifies where to point the arrow of a tooltip at on this panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#tooltip-arrow-position"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-body-position",
+            "description": "Specifies where to position the body of a tooltip relative to this panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#tooltip-body-position"
+                }
+            ]
+        },
+        {
+            "name": "tooltip-position",
+            "description": "Specifies where to position a tooltip relative to this panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#tooltip-position"
+                }
+            ]
+        },
+        {
+            "name": "transform",
+            "description": "Sets the transforms to apply to the panel in 2d or 3d space.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transform"
+                }
+            ]
+        },
+        {
+            "name": "transform-origin",
+            "description": "Sets the transform origin about which transforms will be applied. Default is 50% 50% on the panel so a rotation/scale is centered.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transform-origin"
+                }
+            ]
+        },
+        {
+            "name": "transition",
+            "description": "Specifies which properties should transition smoothly to new values if a class/pseudo class changes the styles.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition"
+                }
+            ]
+        },
+        {
+            "name": "transition-delay",
+            "description": "Specifies the delay in seconds to use for transition properties on this panel, if more than one comma delimited value is specified then the values are applied to each property specified in 'transition-property' in order. If only one value is specified then it applies to all the properties specified in transition-property.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition-delay"
+                }
+            ]
+        },
+        {
+            "name": "transition-duration",
+            "description": "Specifies the durating in seconds to use for transition properties on this panel, if more than one comma delimited value is specified then the values are applied to each property specified in 'transition-property' in order. If only one value is specified then it applies to all the properties specified in transition-property.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition-duration"
+                }
+            ]
+        },
+        {
+            "name": "transition-property",
+            "description": "Specifies which properties should transition smoothly to new values if a class/pseudo class changes the styles.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition-property"
+                }
+            ]
+        },
+        {
+            "name": "transition-timing-function",
+            "description": "Specifies the timing function to use for transition properties on this panel, if more than one comma delimited value is specified then the values are applied to each property specified in 'transition-property' in order. If only one value is specified then it applies to all the properties specified in transition-property.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition-timing-function"
+                }
+            ]
+        },
+        {
+            "name": "ui-scale",
+            "description": "Specifies a scale to apply to this panel's layout and all descendants. This scale happens at the layout level ratherthan the bitmap level, so things like text will increase their font size rather than just bitmap scaling.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#ui-scale"
+                }
+            ]
+        },
+        {
+            "name": "ui-scale-x",
+            "description": "Specifies a scale on the X axis to apply to this panel's layout and all descendants.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#ui-scale-x"
+                }
+            ]
+        },
+        {
+            "name": "ui-scale-y",
+            "description": "Specifies a scale on the Y axis to apply to this panel's layout and all descendants.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#ui-scale-y"
+                }
+            ]
+        },
+        {
+            "name": "ui-scale-z",
+            "description": "Specifies a scale on the Z axis to apply to this panel's layout and all descendants.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#ui-scale-z"
+                }
+            ]
+        },
+        {
+            "name": "vertical-align",
+            "description": "Controls the vertical alignment of content. To change both this and horizontal alignment in one property, use align. Defaults to top.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#vertical-align"
+                }
+            ]
+        },
+        {
+            "name": "visibility",
+            "description": "Controls if the panel is visible and is included in panel layout.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#visibility"
+                }
+            ]
+        },
+        {
+            "name": "wash-color",
+            "description": "Specifies a 'wash' color, which means a color that will be blended over the panel and all it's children at composition time, tinting them. The alpha value of the color determines the intensity of the tinting.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#wash-color"
+                }
+            ]
+        },
+        {
+            "name": "wash-color-fast",
+            "description": "Fast version of wash-color.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#wash-color-fast"
+                }
+            ]
+        },
+        {
+            "name": "white-space",
+            "description": "Controls white-space wrapping on rendered text.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#white-space"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "description": "Sets the width for this panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#width"
+                }
+            ]
+        },
+        {
+            "name": "x",
+            "description": "Sets the x position for a panel, in pixels. Defaults to 0. Must not be in a flowing layout.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#x"
+                }
+            ]
+        },
+        {
+            "name": "y",
+            "description": "Sets the y position for a panel, in pixels. Defaults to 0. Must not be in a flowing layout.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#y"
+                }
+            ]
+        },
+        {
+            "name": "z",
+            "description": "Sets the z position for a panel, in pixels. Defaults to 0. Must not be in a flowing layout.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#z"
+                }
+            ]
+        },
+        {
+            "name": "z-index",
+            "description": "Sets the z-index for a panel, panels will be sorted and painted in order within a parent panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#z-index"
+                }
+            ]
+        }
+    ],
+    "atDirectives": [
+        {
+            "name": "@define",
+            "description": "Constant variable definition.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Definitions"
+                }
+            ]
+        }
+    ],
+    "pseudoClasses": [
+        {
+            "name": ":activationdisabled",
+            "description": "Panel is disabled for activation, may still be enabled for focus (normal disabled disallows all input/focus).",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":active",
+            "description": "Panel is being actively used (mouse-down on the panel).",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":descendantfocus",
+            "description": "A descendant of the panel has keyboard focus.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":disabled",
+            "description": "Panel is disabled.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":enabled",
+            "description": "Panel is enabled.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":focus",
+            "description": "Panel has keyboard focus.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":hover",
+            "description": "Mouse is over the panel.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":inspect",
+            "description": "Panel is being inspected by the debugger.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":layoutfailed",
+            "description": "Panel failed to load requested layout file, and thus may want to display specially.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":layoutloading",
+            "description": "Panel is in-progress loading it's layout file and thus may want to display specially.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":parentdisabled",
+            "description": "A parent of this panel is disabled, thus implicitly disabling it.",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        },
+        {
+            "name": ":selected",
+            "description": "Panel is selected (button checked).",
+            "references": [
+                {
+                    "name": "Panorama CSS Reference",
+                    "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Supported_pseudo-selectors"
+                }
+            ]
+        }
+    ]
+}
