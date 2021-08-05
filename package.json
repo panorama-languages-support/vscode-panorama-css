@@ -3,6 +3,7 @@
     "displayName": "Panorama CSS Support",
     "description": "Support for the Panorama subset of CSS3.",
     "version": "0.1.0",
+    "publisher": "braemie",
     "author": {
         "name": "Brae Stoltz",
         "email": "brae@momentum-mod.org",
