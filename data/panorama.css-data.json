@@ -3,43 +3,47 @@
     "properties": [
         {
             "name": "-s2-mix-blend-mode",
-            "description": "Controls blending mode for the panel. See CSS mix-blend-mode docs on web, except normal for us is with alpha blending.",
+            "description": "Controls blending mode for the panel. Similar to CSS mix-blend-mode, except normal for Panorama is with alpha blending.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#-s2-mix-blend-mode"
                 }
-            ]
+            ],
+            "syntax": "normal | multiply | screen | additive | SRGBadditive | opaque"
         },
         {
             "name": "align",
-            "description": "Controls the horizontal and/or vertical alignment of content. First value is the horizontal alignment, and second is the vertical. Both must be present. If you want to change just horizontal or just vertical alignment, use horizontal-align or vertical-align respectively. Defaults to left and top respectively.",
+            "description": "Controls the horizontal and/or vertical alignment of content.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#align"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-align> <vertical-align>"
         },
         {
             "name": "animation",
-            "description": "Sets all of the following animation properties in order: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, and animation-fill-mode. Only animation-name and animation-duration are required. animation-name is used to later define a keyframe.",
+            "description": "Sets all animation properties.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation"
                 }
-            ]
+            ],
+            "syntax": "<animation-name> <animation-durartion> [animation-timing-function] [animation-delay] [animation-iteration-count] [animation-direction] [animation-fill-mode]"
         },
         {
             "name": "animation-delay",
-            "description": "",
+            "description": "Controls the delay before the animation starts.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-delay"
                 }
-            ]
+            ],
+            "syntax": "<time>"
         },
         {
             "name": "animation-direction",
@@ -49,17 +53,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-direction"
                 }
-            ]
+            ],
+            "syntax": "normal | alternate | reverse | alternate-reverse"
         },
         {
             "name": "animation-duration",
-            "description": "Controls the duration of an animation, in milliseconds (ms) or seconds (s).",
+            "description": "Controls the duration of an animation.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-duration"
                 }
-            ]
+            ],
+            "syntax": "<time>"
         },
         {
             "name": "animation-fill-mode",
@@ -69,17 +75,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-fill-mode"
                 }
-            ]
+            ],
+            "syntax": "none | forward | backwards | both"
         },
         {
             "name": "animation-iteration-count",
-            "description": "Controls the number of iterations to play for an animation. Alternatively, 'infinite' can be used to constantly play the animation.",
+            "description": "Controls the number of iterations to play for an animation.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-iteration-count"
                 }
-            ]
+            ],
+            "syntax": "<integer> | infinite"
         },
         {
             "name": "animation-name",
@@ -89,7 +97,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-name"
                 }
-            ]
+            ],
+            "syntax": "<keyframes-name>"
         },
         {
             "name": "animation-timing-function",
@@ -99,7 +108,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#animation-timing-function"
                 }
-            ]
+            ],
+            "syntax": "none | ease | ease-in | ease-out | ease-in-out | linear | <cubic-bezier>"
         },
         {
             "name": "background-color",
@@ -109,17 +119,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-color"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "background-image",
-            "description": "Comma separated list of images or movies to draw in the background. Can specify 'none' to not draw a background layer. Combined with background-position, background-size and background-repeat values.",
+            "description": "Comma separated list of images or movies to draw in the background.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-image"
                 }
-            ]
+            ],
+            "syntax": "<image>"
         },
         {
             "name": "background-img-opacity",
@@ -129,17 +141,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-img-opacity"
                 }
-            ]
+            ],
+            "syntax": "<alpha>"
         },
         {
             "name": "background-position",
-            "description": "Controls the horizontal and vertical placement of the background image, with the format: <left|center|right> <horizontal length> <top|center|bottom> <vertical length>.",
+            "description": "Controls the horizontal and vertical placement of the background image.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-position"
                 }
-            ]
+            ],
+            "syntax": "<left | center | right> <horizontal-length> <top | center | bottom> <vertical-length>"
         },
         {
             "name": "background-repeat",
@@ -149,17 +163,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-repeat"
                 }
-            ]
+            ],
+            "syntax": "[ repeat | space | round | no-repeat ]{1,2}"
         },
         {
             "name": "background-size",
-            "description": "Sets the horizontal and vertical dimensions used to draw the background image. Can be set in pixels, percent, 'contains' to size down to panel dimensions or 'auto' preserves the image aspect ratio. By default, set to 'auto' which preveres the image's original size.",
+            "description": "Sets the horizontal and vertical dimensions used to draw the background image.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#background-size"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-length> <vertical-length>"
         },
         {
             "name": "blur",
@@ -169,27 +185,30 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#blur"
                 }
-            ]
+            ],
+            "syntax": "gaussian(...) | fastgaussian(...) | fastanimgaussian(...)"
         },
         {
             "name": "border",
-            "description": "Shorthand for setting panel border. Specify width, style, and color.",
+            "description": "Shorthand for setting panel border.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border"
                 }
-            ]
+            ],
+            "syntax": "<line-width> <border-style> <color>"
         },
         {
             "name": "border-bottom",
-            "description": "Shorthand for setting the bottom panel border. Specify width, style, and color.",
+            "description": "Shorthand for setting the bottom panel border.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom"
                 }
-            ]
+            ],
+            "syntax": "<line-width> <border-style> <color>"
         },
         {
             "name": "border-bottom-color",
@@ -199,7 +218,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-color"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "border-bottom-left-radius",
@@ -209,7 +229,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-left-radius"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-radii> <vertical-radii>"
         },
         {
             "name": "border-bottom-right-radius",
@@ -219,7 +240,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-right-radius"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-radii> <vertical-radii>"
         },
         {
             "name": "border-bottom-style",
@@ -229,7 +251,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-style"
                 }
-            ]
+            ],
+            "syntax": "solid | none"
         },
         {
             "name": "border-bottom-width",
@@ -239,27 +262,30 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-bottom-width"
                 }
-            ]
+            ],
+            "syntax": "<line-width>"
         },
         {
             "name": "border-color",
-            "description": "Specifies border color for panel. If a single color value is set it applies to all sides, if 2 are set the first is top/bottom and the second is left/right, if all four are set then they are top, right, bottom, left in order.",
+            "description": "Specifies border color for panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-color"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "border-left",
-            "description": "Shorthand for setting the left panel border. Specify width, style, and color.",
+            "description": "Shorthand for setting the left panel border.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-left"
                 }
-            ]
+            ],
+            "syntax": "<line-width> <border-style> <color>"
         },
         {
             "name": "border-left-color",
@@ -269,7 +295,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-left-color"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "border-left-style",
@@ -279,7 +306,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-left-style"
                 }
-            ]
+            ],
+            "syntax": "solid | none"
         },
         {
             "name": "border-left-width",
@@ -289,7 +317,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-left-width"
                 }
-            ]
+            ],
+            "syntax": "<line-width>"
         },
         {
             "name": "border-radius",
@@ -299,17 +328,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-radius"
                 }
-            ]
+            ],
+            "syntax": "<length-percentage>{1,4} [ / <length-percentage>{1,4} ]"
         },
         {
             "name": "border-right",
-            "description": "Shorthand for setting the right panel border. Specify width, style, and color.",
+            "description": "Shorthand for setting the right panel border.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-right"
                 }
-            ]
+            ],
+            "syntax": "<line-width> <border-style> <color>"
         },
         {
             "name": "border-right-color",
@@ -319,7 +350,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-right-color"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "border-right-style",
@@ -329,7 +361,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-right-style"
                 }
-            ]
+            ],
+            "syntax": "solid | none"
         },
         {
             "name": "border-right-width",
@@ -339,27 +372,30 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-right-width"
                 }
-            ]
+            ],
+            "syntax": "<line-width>"
         },
         {
             "name": "border-style",
-            "description": "Specifies border style for panel. If a single style value is set it applies to all sides, if 2 are set the first is top/bottom and the second is left/right, if all four are set then they are top, right, bottom, left in order.",
+            "description": "Specifies border style for panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-style"
                 }
-            ]
+            ],
+            "syntax": "[border-style]{1,4}"
         },
         {
             "name": "border-top",
-            "description": "Shorthand for setting the top panel border. Specify width, style, and color.",
+            "description": "Shorthand for setting the top panel border.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top"
                 }
-            ]
+            ],
+            "syntax": "<line-width> <border-style> <color>"
         },
         {
             "name": "border-top-color",
@@ -369,7 +405,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-color"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "border-top-left-radius",
@@ -379,7 +416,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-left-radius"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-radii> <vertical-radii>"
         },
         {
             "name": "border-top-right-radius",
@@ -389,7 +427,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-right-radius"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-radii> <vertical-radii>"
         },
         {
             "name": "border-top-style",
@@ -399,7 +438,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-style"
                 }
-            ]
+            ],
+            "syntax": "solid | none"
         },
         {
             "name": "border-top-width",
@@ -409,17 +449,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-top-width"
                 }
-            ]
+            ],
+            "syntax": "<line-width>"
         },
         {
             "name": "border-width",
-            "description": "Specifies border width for panel. If a single width value is set it applies to all sides, if 2 are set the first is top/bottom and the second is left/right, if all four are set then they are top, right, bottom, left in order.",
+            "description": "Specifies border width for panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#border-width"
                 }
-            ]
+            ],
+            "syntax": "[line-width]{1,4}"
         },
         {
             "name": "box-shadow",
@@ -429,17 +471,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#box-shadow"
                 }
-            ]
+            ],
+            "syntax": "[fill] [inset] <color> <horizontal-offset-px> <vertical-offset-px> <blur-radius-px> <spread-distance-px>"
         },
         {
             "name": "brightness",
-            "description": "Sets the brightness that applies to the panel and all it's children during composition. The value is a multiplier on the HSB brightness value.",
+            "description": "Sets the brightness that applies to the panel and all it's children during composition.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#brightness"
                 }
-            ]
+            ],
+            "syntax": "<HSB-brightness-multiplier>"
         },
         {
             "name": "clip",
@@ -449,7 +493,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#clip"
                 }
-            ]
+            ],
+            "syntax": "rect(...) | radial(...)"
         },
         {
             "name": "color",
@@ -459,7 +504,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#color"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "context-menu-arrow-position",
@@ -469,7 +515,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#context-menu-arrow-position"
                 }
-            ]
+            ],
+            "syntax": "<position> <position>"
         },
         {
             "name": "context-menu-body-position",
@@ -479,7 +526,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#context-menu-body-position"
                 }
-            ]
+            ],
+            "syntax": "<position> <position>"
         },
         {
             "name": "context-menu-position",
@@ -489,7 +537,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#context-menu-position"
                 }
-            ]
+            ],
+            "syntax": "<position> <position>"
         },
         {
             "name": "contrast",
@@ -499,7 +548,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#contrast"
                 }
-            ]
+            ],
+            "syntax": "<float>"
         },
         {
             "name": "flow-children",
@@ -509,7 +559,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#flow-children"
                 }
-            ]
+            ],
+            "syntax": "none | down | right | up | left | down-wrap | right-wrap | up-wrap | left-wrap"
         },
         {
             "name": "font-family",
@@ -519,7 +570,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#font-family"
                 }
-            ]
+            ],
+            "syntax": "<family-name>"
         },
         {
             "name": "font-size",
@@ -529,7 +581,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#font-size"
                 }
-            ]
+            ],
+            "syntax": "<font-face-height>"
         },
         {
             "name": "font-style",
@@ -539,7 +592,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#font-style"
                 }
-            ]
+            ],
+            "syntax": "<absolute-size> | <relative-size> | <length-percentage>"
         },
         {
             "name": "font-weight",
@@ -549,7 +603,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#font-weight"
                 }
-            ]
+            ],
+            "syntax": "normal | bold | thin"
         },
         {
             "name": "height",
@@ -559,7 +614,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#height"
                 }
-            ]
+            ],
+            "syntax": "<length>{1,2} | fill-parent-flow(<weight>) | height-percentage(<percentage>)"
         },
         {
             "name": "horizontal-align",
@@ -569,17 +625,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#horizontal-align"
                 }
-            ]
+            ],
+            "syntax": "left | center | right | center_nopixelsnap"
         },
         {
             "name": "hue-rotation",
-            "description": "Sets the hue rotation to apply to the panel and all it's children during composition. Default of 0.0 means no adjustment, domain is in degrees.",
+            "description": "Sets the hue rotation to apply to the panel and all it's children during composition.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#hue-rotation"
                 }
-            ]
+            ],
+            "syntax": "<value-in-degrees>"
         },
         {
             "name": "img-shadow",
@@ -589,7 +647,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#img-shadow"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-offset-px> <vertical-offset-px> <blur-radius-px> <strength> <color>"
         },
         {
             "name": "letter-spacing",
@@ -599,7 +658,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#letter-spacing"
                 }
-            ]
+            ],
+            "syntax": "normal | <pixels>"
         },
         {
             "name": "line-height",
@@ -609,57 +669,63 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#line-height"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "margin",
-            "description": "Sets the space between this panel to another panel, in pixels. The properties of all four sides in order are: margin-top, margin-right, margin-bottom, and margin-left.",
+            "description": "Sets the space between this panel to another panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin"
                 }
-            ]
+            ],
+            "syntax": "[ <length> | <percentage> ]{1,4}"
         },
         {
             "name": "margin-bottom",
-            "description": "Sets the space between the bottom of this panel to the top of another panel, in pixels.",
+            "description": "Sets the space between the bottom of this panel to the top of another panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin-bottom"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "margin-left",
-            "description": "Sets the space between the left-side of this panel to the right-side of another panel, in pixels.",
+            "description": "Sets the space between the left-side of this panel to the right-side of another panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin-left"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "margin-right",
-            "description": "Sets the space between the right-side of this panel to the left-side of another panel, in pixels.",
+            "description": "Sets the space between the right-side of this panel to the left-side of another panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin-right"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "margin-top",
-            "description": "Sets the space between the top of this panel to the bottom of another panel, in pixels.",
+            "description": "Sets the space between the top of this panel to the bottom of another panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#margin-top"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "max-height",
@@ -669,7 +735,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#max-height"
                 }
-            ]
+            ],
+            "syntax": "<length>{1,2} | fill-parent-flow(<weight>) | height-percentage(<percentage>)"
         },
         {
             "name": "max-width",
@@ -679,7 +746,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#max-width"
                 }
-            ]
+            ],
+            "syntax": "<length>{1,2} | fill-parent-flow(<weight>) | width-percentage(<percentage>)"
         },
         {
             "name": "min-height",
@@ -689,7 +757,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#min-height"
                 }
-            ]
+            ],
+            "syntax": "<length>{1,2} | fill-parent-flow(<weight>) | height-percentage(<percentage>)"
         },
         {
             "name": "min-width",
@@ -699,7 +768,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#min-width"
                 }
-            ]
+            ],
+            "syntax": "<length>{1,2} | fill-parent-flow(<weight>) | width-percentage(<percentage>)"
         },
         {
             "name": "opacity",
@@ -709,7 +779,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity"
                 }
-            ]
+            ],
+            "syntax": "<alpha>"
         },
         {
             "name": "opacity-mask",
@@ -719,7 +790,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity-mask"
                 }
-            ]
+            ],
+            "syntax": "<image> [<alpha>]"
         },
         {
             "name": "opacity-mask-scroll-down",
@@ -729,7 +801,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity-mask-scroll-down"
                 }
-            ]
+            ],
+            "syntax": "<image> [<alpha>]"
         },
         {
             "name": "opacity-mask-scroll-up",
@@ -739,7 +812,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity-mask-scroll-up"
                 }
-            ]
+            ],
+            "syntax": "<image> [<alpha>]"
         },
         {
             "name": "opacity-mask-scroll-up-down",
@@ -749,7 +823,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#opacity-mask-scroll-up-down"
                 }
-            ]
+            ],
+            "syntax": "<image> [<alpha>]"
         },
         {
             "name": "overflow",
@@ -759,57 +834,63 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#overflow"
                 }
-            ]
+            ],
+            "syntax": "[squish | clip | scroll | noclip]{1,2}"
         },
         {
             "name": "padding",
-            "description": "Sets the space between the content and the edge of the panel, in pixels. The properties of all four sides in order are: padding-top, padding-right, padding-bottom, and padding-left.",
+            "description": "Sets the space between the content and the edge of the panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding"
                 }
-            ]
+            ],
+            "syntax": "[ <length> | <percentage> ]{1,4}"
         },
         {
             "name": "padding-bottom",
-            "description": "Sets the space between the content and the bottom edge of the panel, in pixels.",
+            "description": "Sets the space between the content and the bottom edge of the panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding-bottom"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "padding-left",
-            "description": "Sets the space between the content and the left edge of the panel, in pixels.",
+            "description": "Sets the space between the content and the left edge of the panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding-left"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "padding-right",
-            "description": "Sets the space between the content and the right edge of the panel, in pixels.",
+            "description": "Sets the space between the content and the right edge of the panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding-right"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "padding-top",
-            "description": "Sets the space between the content and the top edge of the panel, in pixels.",
+            "description": "Sets the space between the content and the top edge of the panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#padding-top"
                 }
-            ]
+            ],
+            "syntax": "<length> | <percentage>"
         },
         {
             "name": "perspective",
@@ -819,7 +900,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#perspective"
                 }
-            ]
+            ],
+            "syntax": "<z-position-px>"
         },
         {
             "name": "perspective-origin",
@@ -829,7 +911,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#perspective-origin"
                 }
-            ]
+            ],
+            "syntax": "<x-position> <y-position>"
         },
         {
             "name": "position",
@@ -839,7 +922,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#position"
                 }
-            ]
+            ],
+            "syntax": "<x-position> <y-position> <z-position>"
         },
         {
             "name": "pre-transform-rotate2d",
@@ -849,7 +933,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#pre-transform-rotate2d"
                 }
-            ]
+            ],
+            "syntax": "<value-in-degrees>"
         },
         {
             "name": "pre-transform-scale2d",
@@ -859,7 +944,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#pre-transform-scale2d"
                 }
-            ]
+            ],
+            "syntax": "<x-scale> <y-scale>"
         },
         {
             "name": "saturation",
@@ -869,7 +955,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#saturation"
                 }
-            ]
+            ],
+            "syntax": "<alpha>"
         },
         {
             "name": "sound",
@@ -879,7 +966,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#sound"
                 }
-            ]
+            ],
+            "syntax": "<sound-name>"
         },
         {
             "name": "sound-out",
@@ -889,7 +977,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#sound-out"
                 }
-            ]
+            ],
+            "syntax": "<sound-name>"
         },
         {
             "name": "sound-trans",
@@ -899,7 +988,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#sound-trans"
                 }
-            ]
+            ],
+            "syntax": "<sound-name>"
         },
         {
             "name": "text-align",
@@ -909,7 +999,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-align"
                 }
-            ]
+            ],
+            "syntax": "left | center | right"
         },
         {
             "name": "text-decoration",
@@ -919,7 +1010,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-decoration"
                 }
-            ]
+            ],
+            "syntax": "none | underline | line-through"
         },
         {
             "name": "text-overflow",
@@ -929,7 +1021,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-overflow"
                 }
-            ]
+            ],
+            "syntax": "clip | ellipsis | shrink | noclip"
         },
         {
             "name": "text-shadow",
@@ -939,7 +1032,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-shadow"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-offset-px> <vertical-offset-px> <blur-radius-px> <strength> <color>"
         },
         {
             "name": "text-shadow-fast",
@@ -949,7 +1043,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-shadow-fast"
                 }
-            ]
+            ],
+            "syntax": "<horizontal-offset-px> <vertical-offset-px> <blur-radius-px> <strength> <color>"
         },
         {
             "name": "text-transform",
@@ -959,7 +1054,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-transform"
                 }
-            ]
+            ],
+            "syntax": "none | uppercase | lowercase"
         },
         {
             "name": "texture-sampling",
@@ -969,7 +1065,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#texture-sampling"
                 }
-            ]
+            ],
+            "syntax": "normal | alpha-only"
         },
         {
             "name": "tooltip-arrow-position",
@@ -979,7 +1076,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#tooltip-arrow-position"
                 }
-            ]
+            ],
+            "syntax": "<position> <position>"
         },
         {
             "name": "tooltip-body-position",
@@ -989,7 +1087,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#tooltip-body-position"
                 }
-            ]
+            ],
+            "syntax": "<position> <position>"
         },
         {
             "name": "tooltip-position",
@@ -999,7 +1098,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#tooltip-position"
                 }
-            ]
+            ],
+            "syntax": "[left | top | right | bottom]{1,2}"
         },
         {
             "name": "transform",
@@ -1009,7 +1109,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transform"
                 }
-            ]
+            ],
+            "syntax": "[<transform>]{1,*}"
         },
         {
             "name": "transform-origin",
@@ -1019,7 +1120,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transform-origin"
                 }
-            ]
+            ],
+            "syntax": "<x-position> <y-position>"
         },
         {
             "name": "transition",
@@ -1029,27 +1131,30 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition"
                 }
-            ]
+            ],
+            "syntax": "[<transition-property> <transition-duration> <transition-timing-function> <transition-delay>],{1,*}"
         },
         {
             "name": "transition-delay",
-            "description": "Specifies the delay in seconds to use for transition properties on this panel, if more than one comma delimited value is specified then the values are applied to each property specified in 'transition-property' in order. If only one value is specified then it applies to all the properties specified in transition-property.",
+            "description": "Specifies the delay in seconds to use for transition properties on this panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition-delay"
                 }
-            ]
+            ],
+            "syntax": "[<time>],{1,*}"
         },
         {
             "name": "transition-duration",
-            "description": "Specifies the durating in seconds to use for transition properties on this panel, if more than one comma delimited value is specified then the values are applied to each property specified in 'transition-property' in order. If only one value is specified then it applies to all the properties specified in transition-property.",
+            "description": "Specifies the durating in seconds to use for transition properties on this panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition-duration"
                 }
-            ]
+            ],
+            "syntax": "[<time>],{1,*}"
         },
         {
             "name": "transition-property",
@@ -1059,17 +1164,19 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition-property"
                 }
-            ]
+            ],
+            "syntax": "[<property-name>],{1,*}"
         },
         {
             "name": "transition-timing-function",
-            "description": "Specifies the timing function to use for transition properties on this panel, if more than one comma delimited value is specified then the values are applied to each property specified in 'transition-property' in order. If only one value is specified then it applies to all the properties specified in transition-property.",
+            "description": "Specifies the timing function to use for transition properties on this panel.",
             "references": [
                 {
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#transition-timing-function"
                 }
-            ]
+            ],
+            "syntax": "[ease | ease-in | ease-out | ease-in-out | linear | <cubic-bezier>],{1,*}"
         },
         {
             "name": "ui-scale",
@@ -1079,7 +1186,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#ui-scale"
                 }
-            ]
+            ],
+            "syntax": "[<position-scale>]{1,3}"
         },
         {
             "name": "ui-scale-x",
@@ -1089,7 +1197,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#ui-scale-x"
                 }
-            ]
+            ],
+            "syntax": "<position-scale>"
         },
         {
             "name": "ui-scale-y",
@@ -1099,7 +1208,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#ui-scale-y"
                 }
-            ]
+            ],
+            "syntax": "<position-scale>"
         },
         {
             "name": "ui-scale-z",
@@ -1109,7 +1219,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#ui-scale-z"
                 }
-            ]
+            ],
+            "syntax": "<position-scale>"
         },
         {
             "name": "vertical-align",
@@ -1119,7 +1230,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#vertical-align"
                 }
-            ]
+            ],
+            "syntax": "top | center | bottom | center_nopixelsnap"
         },
         {
             "name": "visibility",
@@ -1129,7 +1241,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#visibility"
                 }
-            ]
+            ],
+            "syntax": "visible | collapse"
         },
         {
             "name": "wash-color",
@@ -1139,7 +1252,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#wash-color"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "wash-color-fast",
@@ -1149,7 +1263,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#wash-color-fast"
                 }
-            ]
+            ],
+            "syntax": "<color>"
         },
         {
             "name": "white-space",
@@ -1159,7 +1274,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#white-space"
                 }
-            ]
+            ],
+            "syntax": "normal | nowrap"
         },
         {
             "name": "width",
@@ -1169,7 +1285,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#width"
                 }
-            ]
+            ],
+            "syntax": "<length>{1,2} | fill-parent-flow(<weight>) | width-percentage(<percentage>)"
         },
         {
             "name": "x",
@@ -1179,7 +1296,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#x"
                 }
-            ]
+            ],
+            "syntax": "<position>"
         },
         {
             "name": "y",
@@ -1189,7 +1307,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#y"
                 }
-            ]
+            ],
+            "syntax": "<position>"
         },
         {
             "name": "z",
@@ -1199,7 +1318,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#z"
                 }
-            ]
+            ],
+            "syntax": "<position>"
         },
         {
             "name": "z-index",
@@ -1209,7 +1329,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#z-index"
                 }
-            ]
+            ],
+            "syntax": "<integer>"
         }
     ],
     "atDirectives": [
@@ -1221,7 +1342,8 @@
                     "name": "Panorama CSS Reference",
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#Definitions"
                 }
-            ]
+            ],
+            "syntax": "<variable-name>: <value>"
         }
     ],
     "pseudoClasses": [
