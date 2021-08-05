@@ -3,6 +3,12 @@
     "displayName": "Panorama CSS Support",
     "description": "Support for the Panorama subset of CSS3.",
     "version": "0.1.0",
+    "author": {
+        "name": "Brae Stoltz",
+        "email": "brae@momentum-mod.org",
+        "url": "https://github.com/braem"
+    },
+    "icon": "icon.png",
     "license": "MIT",
     "engines": {
         "vscode": "*"
@@ -21,5 +27,18 @@
     },
     "categories": [
         "Programming Languages"
-    ]
+    ],
+    "keywords": [
+        "panorama",
+        "css"
+    ],
+    "bugs": {
+        "url": "https://github.com/braem/vscode-panorama-css/issues",
+        "email": "brae@momentum-mod.org"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/braem/vscode-panorama-css"
+    },
+    "homepage": "https://github.com/braem/vscode-panorama-css"
 }
