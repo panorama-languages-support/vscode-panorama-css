@@ -12,7 +12,7 @@
     "icon": "icon.png",
     "license": "MIT",
     "engines": {
-        "vscode": "*"
+        "vscode": "^1.28.0"
     },
     "contributes": {
         "grammars": [
