@@ -140,10 +140,6 @@
 				{
 					"match": "(?i)(?<![\\w-])currentColor(?![\\w-])",
 					"name": "support.constant.color.current.css"
-				},
-				{
-					"match": "(?xi) (?<![\\w-])\n(ActiveBorder|ActiveCaption|AppWorkspace|Background|ButtonFace|ButtonHighlight|ButtonShadow\n|ButtonText|CaptionText|GrayText|Highlight|HighlightText|InactiveBorder|InactiveCaption\n|InactiveCaptionText|InfoBackground|InfoText|Menu|MenuText|Scrollbar|ThreeDDarkShadow\n|ThreeDFace|ThreeDHighlight|ThreeDLightShadow|ThreeDShadow|Window|WindowFrame|WindowText)\n(?![\\w-])",
-					"name": "invalid.deprecated.color.system.css"
 				}
 			]
 		},
