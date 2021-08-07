@@ -324,7 +324,7 @@
 					]
 				},
 				{
-					"begin": "(?xi) (?<![\\w-])\n(annotation|attr|blur|brightness|character-variant|contrast|counters?\n|cross-fade|drop-shadow|element|fit-content|format|grayscale|hue-rotate\n|image-set|invert|local|minmax|opacity|ornaments|repeat|saturate|sepia\n|styleset|stylistic|swash|symbols)\n(\\()",
+					"begin": "(?xi) (?<![\\w-])\n(annotation|attr|blur|brightness|character-variant|contrast|counters?\n|cross-fade|drop-shadow|element|fastanimgaussian|fastgaussian|fill-parent-flow|fit-content|format|gaussian|grayscale\n|height-percentage|hue-rotate|image-set|invert|local|minmax|opacity|ornaments\n|repeat|saturate|sepia|styleset|stylistic|swash|symbols|width-percentage)\n(\\()",
 					"beginCaptures": {
 						"1": {
 							"name": "support.function.misc.css"
