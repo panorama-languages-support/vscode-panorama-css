@@ -229,54 +229,6 @@
 				}
 			]
 		},
-		"font-features": {
-			"begin": "(?xi)\n((@)(annotation|character-variant|ornaments|styleset|stylistic|swash))\n(?=[\\s@'\"{;]|/\\*|$)",
-			"beginCaptures": {
-				"1": {
-					"name": "keyword.control.at-rule.${3:/downcase}.css"
-				},
-				"2": {
-					"name": "punctuation.definition.keyword.css"
-				}
-			},
-			"end": "(?<=})",
-			"name": "meta.at-rule.${3:/downcase}.css",
-			"patterns": [
-				{
-					"begin": "{",
-					"beginCaptures": {
-						"0": {
-							"name": "punctuation.section.property-list.begin.bracket.curly.css"
-						}
-					},
-					"end": "}",
-					"endCaptures": {
-						"0": {
-							"name": "punctuation.section.property-list.end.bracket.curly.css"
-						}
-					},
-					"name": "meta.property-list.font-feature.css",
-					"patterns": [
-						{
-							"captures": {
-								"0": {
-									"patterns": [
-										{
-											"include": "#escapes"
-										}
-									]
-								}
-							},
-							"match": "(?x)\n(?: [-a-zA-Z_]    | [^\\x00-\\x7F] )   # First letter\n(?: [-a-zA-Z0-9_] | [^\\x00-\\x7F]     # Remainder of identifier\n  | \\\\(?:[0-9a-fA-F]{1,6}|.)\n)*",
-							"name": "variable.font-feature.css"
-						},
-						{
-							"include": "#rule-list-innards"
-						}
-					]
-				}
-			]
-		},
 		"functions": {
 			"patterns": [
 				{
