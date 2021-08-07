@@ -926,18 +926,6 @@
 			"match": "(?xi)\n(:)(:*)\n(?: activationdisabled|active|descendantfocus|disabled|enabled|focus|inspect|layoutfailed|layoutloading|parentdisabled|selected\n  | (?:first|last|only)-(?:child|of-type)|hover\n)(?![\\w-]|\\s*[;}])",
 			"name": "entity.other.attribute-name.pseudo-class.css"
 		},
-		"pseudo-elements": {
-			"captures": {
-				"1": {
-					"name": "punctuation.definition.entity.css"
-				},
-				"2": {
-					"name": "punctuation.definition.entity.css"
-				}
-			},
-			"match": "(?xi)\n(?:\n  (::?)                       # Elements using both : and :: notation\n  (?: after\n    | before\n    | first-letter\n    | first-line\n    | (?:-(?:ah|apple|atsc|epub|hp|khtml|moz\n            |ms|o|rim|ro|tc|wap|webkit|xv)\n        | (?:mso|prince))\n      -[a-z-]+\n  )\n  |\n  (::)                        # Double-colon only\n  (?: backdrop\n    | content\n    | grammar-error\n    | marker\n    | placeholder\n    | selection\n    | shadow\n    | spelling-error\n  )\n)\n(?![\\w-]|\\s*[;}])",
-			"name": "entity.other.attribute-name.pseudo-element.css"
-		},
 		"rule-list": {
 			"begin": "{",
 			"beginCaptures": {
