@@ -278,7 +278,7 @@
 					]
 				},
 				{
-					"begin": "(?xi) (?<![\\w-])\n(\n  (?:-webkit-|-moz-|-o-)?    # Accept prefixed/historical variants\n  (?:repeating-)?            # \"Repeating\"-type gradient\n  (?:linear|radial|conic)    # Shape\n  -gradient\n)\n(\\()",
+					"begin": "(?xi) (?<![\\w-])\n(gradient)\n(\\()",
 					"beginCaptures": {
 						"1": {
 							"name": "support.function.gradient.css"
@@ -295,10 +295,29 @@
 					},
 					"name": "meta.function.gradient.css",
 					"patterns": [
-						{
-							"match": "(?i)(?<![\\w-])(from|to|at)(?![\\w-])",
-							"name": "keyword.operator.gradient.css"
-						},
+                        {
+                            "begin": "(?xi) (?<![\\w-])\n(from|color-stop|to)\n(\\()",
+                            "beginCaptures": {
+                                "1": {
+                                    "name": "support.function.gradient.colorstops.css"
+                                },
+                                "2": {
+                                    "name": "punctuation.section.function.begin.bracket.round.css"
+                                }
+                            },
+                            "end": "\\)",
+                            "endCaptures": {
+                                "0": {
+                                    "name": "punctuation.section.function.end.bracket.round.css"
+                                }
+                            },
+                            "name": "meta.function.gradient.colorstops.css",
+                            "patterns": [
+                                {
+                                    "include": "#property-values"
+                                }
+                            ]
+                        },
 						{
 							"include": "#property-values"
 						}
