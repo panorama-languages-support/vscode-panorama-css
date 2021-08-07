@@ -357,51 +357,6 @@
 					]
 				},
 				{
-					"begin": "(?i)(?<![\\w-])(-webkit-gradient)(\\()",
-					"beginCaptures": {
-						"1": {
-							"name": "invalid.deprecated.gradient.function.css"
-						},
-						"2": {
-							"name": "punctuation.section.function.begin.bracket.round.css"
-						}
-					},
-					"end": "\\)",
-					"endCaptures": {
-						"0": {
-							"name": "punctuation.section.function.end.bracket.round.css"
-						}
-					},
-					"name": "meta.function.gradient.invalid.deprecated.gradient.css",
-					"patterns": [
-						{
-							"begin": "(?i)(?<![\\w-])(from|to|color-stop)(\\()",
-							"beginCaptures": {
-								"1": {
-									"name": "invalid.deprecated.function.css"
-								},
-								"2": {
-									"name": "punctuation.section.function.begin.bracket.round.css"
-								}
-							},
-							"end": "\\)",
-							"endCaptures": {
-								"0": {
-									"name": "punctuation.section.function.end.bracket.round.css"
-								}
-							},
-							"patterns": [
-								{
-									"include": "#property-values"
-								}
-							]
-						},
-						{
-							"include": "#property-values"
-						}
-					]
-				},
-				{
 					"begin": "(?xi) (?<![\\w-])\n(annotation|attr|blur|brightness|character-variant|contrast|counters?\n|cross-fade|drop-shadow|element|fit-content|format|grayscale|hue-rotate\n|image-set|invert|local|minmax|opacity|ornaments|repeat|saturate|sepia\n|styleset|stylistic|swash|symbols)\n(\\()",
 					"beginCaptures": {
 						"1": {
