@@ -1033,7 +1033,7 @@
                     "url": "https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties#text-shadow"
                 }
             ],
-            "syntax": "<horizontal-offset-px> <vertical-offset-px> <blur-radius-px> <strength> <color>"
+            "syntax": "<horizontal-offset-px> <vertical-offset-px> [blur-radius-px] [strength] <color>"
         },
         {
             "name": "text-shadow-fast",
