@@ -4,7 +4,7 @@
 		"Additions/changes should only occur to fix bugs or add a new property introduced by Valve.",
 		"This file has been converted from https://github.com/microsoft/vscode/blob/main/extensions/css/syntaxes/css.tmLanguage.json"
 	],
-	"version": "0.0.1",
+	"version": "0.2.2",
 	"name": "Panorama CSS",
 	"scopeName": "panoramasource.css",
 	"patterns": [
