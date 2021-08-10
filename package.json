@@ -9,6 +9,12 @@
         "email": "brae@momentum-mod.org",
         "url": "https://github.com/braem"
     },
+    "contributors": [
+        {
+            "name": "Ethan Vuong",
+            "url": "https://www.artstation.com/ethanvuong"
+        }
+    ],
     "icon": "icon.png",
     "license": "MIT",
     "engines": {
