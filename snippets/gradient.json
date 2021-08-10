@@ -2,21 +2,21 @@
     "Linear Gradient": {
         "prefix": "gradient",
         "body": [
-            "gradient( linear, ${1}% ${2}%, ${3}% ${4}%, from( ${5} ), to( ${0} ) );"
+            "gradient( linear, ${1:h-start}% ${2:v-start}%, ${3:h-end}% ${4:v-end}%, from( ${5:from-color} ), to( ${0:to-color} ) );"
         ],
         "description": "Linear gradient where you specify all parameters."
     },
     "Vertical Linear Gradient": {
         "prefix": "gradient",
         "body": [
-            "gradient( linear, 0% 0%, 0% 100%, from( ${1} ), to( ${0} ) );"
+            "gradient( linear, 0% 0%, 0% 100%, from( ${1:from-color} ), to( ${0:to-color} ) );"
         ],
         "description": "Vertical linear gradient where you specify only the start and end colors."
     },
     "Horizontal Linear Gradient": {
         "prefix": "gradient",
         "body": [
-            "gradient( linear, 0% 0%, 100% 0%, from( ${1} ), to( ${0} ) );"
+            "gradient( linear, 0% 0%, 100% 0%, from( ${1:from-color} ), to( ${0:to-color} ) );"
         ],
         "description": "Horizontal linear gradient where you specify only the start and end colors."
     },
@@ -24,22 +24,22 @@
     "Radial Gradient": {
         "prefix": "gradient",
         "body": [
-            "gradient( radial, ${1}% ${2}%, 0% 0%, ${3}% ${4}%, from( ${5} ), to( ${0} ) );"
+            "gradient( radial, ${1:h-center}% ${2:v-center}%, 0% 0%, ${3:h-radius}% ${4:v-radius}%, from( ${5:from-color} ), to( ${0:to-color} ) );"
         ],
-        "description": "Radial gradient where you specify all parameters but not offset.    SYNTAX: <radial-center>, <radius>, from( <color> ), to( <color> )"
+        "description": "Radial gradient where you specify all parameters but not offset."
     },
     "Radial Gradient Centered": {
         "prefix": "gradient",
         "body": [
-            "gradient( linear, 50% 50%, 0% 0%, ${1}% ${2}%, from( ${3} ), to( ${0} ) );"
+            "gradient( linear, 50% 50%, 0% 0%, ${1:h-radius}% ${2:v-radius}%, from( ${3:from-color} ), to( ${0:to-color} ) );"
         ],
-        "description": "Centered Radial Gradient where you specify radius and start and end colors.    SYNTAX: <radius>, from( <color> ), to( <color> )"
+        "description": "Centered Radial Gradient where you specify radius and start and end colors."
     },
     "Radial Gradient With Offset": {
         "prefix": "gradient",
         "body": [
-            "gradient( radial, ${1}% ${2}%, ${3}% ${4}%, ${5}% ${6}%, from( ${7} ), to( ${0} ) );"
+            "gradient( radial, ${1:h-center}% ${2:v-center}%, ${3:h-offset}% ${4:v-offset}%, ${5:h-radius}% ${6:v-radius}%, from( ${7:from-color} ), to( ${0:to-color} ) );"
         ],
-        "description": "Radial gradient where you specify all parameters.    SYNTAX: <radial-center>, <offset>, <radius>, from( <color> ), to( <color> )"
+        "description": "Radial gradient where you specify all parameters."
     }
 }
