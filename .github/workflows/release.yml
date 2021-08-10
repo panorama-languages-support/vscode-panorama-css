@@ -1,28 +1,39 @@
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Version'
-        required: true
+  workflow_dispatch
 
 name: Manual Release
 jobs:
-  release:
+  manual_release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      
-      - name: Package
+
+      - name: Zip Source Code
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          filename: 'Source-Code.zip'
+          exclusions: '*.git* .github/*'
+
+      - name: Run NPM CI
+        run: npm ci
+
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
+
+      - name: Package Extension (VSIX)
         uses: lannonbr/vsce-action@master
         with:
-          args: "package -o panorama-css-extension.vsix"
+          args: "package"
 
-      - name: Zip Package
-        uses: papeloto/action-zip@v1
+      - name: Zip VSIX
+        uses: thedoctor0/zip-release@master
         with:
-          files: panorama-css-extension.vsix
-          dest: extension-release.zip
+          type: 'zip'
+          path: panorama-css-${{ steps.package-version.outputs.current-version }}.vsix
+          filename: 'extension.zip'
 
       - name: Create Draft Release
         id: create_release
@@ -30,17 +41,28 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.event.inputs.version }}
-          release_name: ${{ github.event.inputs.version }}
-          body: "See [changelog](https://github.com/braem/vscode-panorama-css/blob/main/CHANGELOG.md) for release notes."
-        draft: true
+          tag_name: ${{ steps.package-version.outputs.current-version }}
+          release_name: ${{ steps.package-version.outputs.current-version }}
+          body_path: CHANGELOG.md
+          draft: true
           prerelease: false
           
-      - uses: actions/upload-release-asset@v1.0.1
+      - name: Upload Source Code Zip to Release
+        uses: actions/upload-release-asset@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./extension-release.zip
-          asset_name: extension-release.zip
+          asset_path: ./Source-Code.zip
+          asset_name: Source-Code.zip
+          asset_content_type: application/zip
+
+      - name: Upload VSIX Zip to Release
+        uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./extension.zip
+          asset_name: extension.zip
           asset_content_type: application/zip
