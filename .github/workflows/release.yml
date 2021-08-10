@@ -1,0 +1,46 @@
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version'
+        required: true
+
+name: Manual Release
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Package
+        uses: lannonbr/vsce-action@master
+        with:
+          args: "package -o panorama-css-extension.vsix"
+
+      - name: Zip Package
+        uses: papeloto/action-zip@v1
+        with:
+          files: panorama-css-extension.vsix
+          dest: extension-release.zip
+
+      - name: Create Draft Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.event.inputs.version }}
+          release_name: ${{ github.event.inputs.version }}
+          body: "See [changelog](https://github.com/braem/vscode-panorama-css/blob/main/CHANGELOG.md) for release notes."
+        draft: true
+          prerelease: false
+          
+      - uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./extension-release.zip
+          asset_name: extension-release.zip
+          asset_content_type: application/zip
