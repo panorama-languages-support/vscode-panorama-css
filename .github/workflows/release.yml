@@ -9,13 +9,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Zip Source Code
-        uses: thedoctor0/zip-release@master
-        with:
-          type: 'zip'
-          filename: 'Source-Code.zip'
-          exclusions: '*.git* .github/*'
-
       - name: Run NPM CI
         run: npm ci
 
@@ -47,16 +40,6 @@ jobs:
           draft: true
           prerelease: false
           
-      - name: Upload Source Code Zip to Release
-        uses: actions/upload-release-asset@v1.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./Source-Code.zip
-          asset_name: Source-Code.zip
-          asset_content_type: application/zip
-
       - name: Upload VSIX Zip to Release
         uses: actions/upload-release-asset@v1.0.1
         env:
