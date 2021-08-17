@@ -7,17 +7,14 @@ body:
   attributes:
     label: Why?
     description: What sort of problem would this feature fix?
-    placeholder: |
-      I expect ... when I do ...
-    render: markdown
+    placeholder: I expect [...] when I do [...]
   validations:
     required: true
+
 - type: textarea
   attributes:
     label: What?
     description: Clear description of the feature you want to see.
-    render: markdown
-    placeholder: |
-      Add functionality to ...
+    placeholder: Add functionality to [...]
   validations:
     required: true
