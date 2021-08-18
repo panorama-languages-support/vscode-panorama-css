@@ -52,6 +52,22 @@
             {
                 "language": "css",
                 "path": "./snippets/misc.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/-s2-mix-blend-mode.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/gradient.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/flow-children.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/misc.json"
             }
         ]
     },
