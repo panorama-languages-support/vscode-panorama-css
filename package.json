@@ -77,7 +77,8 @@
     ],
     "keywords": [
         "panorama",
-        "css"
+        "css",
+        "scss"
     ],
     "bugs": {
         "url": "https://github.com/braem/vscode-panorama-css/issues",
