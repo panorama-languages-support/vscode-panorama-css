@@ -2,42 +2,42 @@
     "S2 Mix Blend Mode Normal": {
         "prefix": "-s2-mix-blend-mode",
         "body": [
-            "-s2-mix-blend-mode: normal;"
+            "-s2-mix-blend-mode: normal"
         ],
         "description": ""
     },
     "S2 Mix Blend Mode Multiply": {
         "prefix": "-s2-mix-blend-mode",
         "body": [
-            "-s2-mix-blend-mode: multiply;"
+            "-s2-mix-blend-mode: multiply"
         ],
         "description": ""
     },
     "S2 Mix Blend Mode Screen": {
         "prefix": "-s2-mix-blend-mode",
         "body": [
-            "-s2-mix-blend-mode: screen;"
+            "-s2-mix-blend-mode: screen"
         ],
         "description": ""
     },
     "S2 Mix Blend Mode Additive": {
         "prefix": "-s2-mix-blend-mode",
         "body": [
-            "-s2-mix-blend-mode: additive;"
+            "-s2-mix-blend-mode: additive"
         ],
         "description": ""
     },
     "S2 Mix Blend Mode SRGB Additive": {
         "prefix": "-s2-mix-blend-mode",
         "body": [
-            "-s2-mix-blend-mode: SRGBadditive;"
+            "-s2-mix-blend-mode: SRGBadditive"
         ],
         "description": ""
     },
     "S2 Mix Blend Mode Opaque": {
         "prefix": "-s2-mix-blend-mode",
         "body": [
-            "-s2-mix-blend-mode: opaque;"
+            "-s2-mix-blend-mode: opaque"
         ],
         "description": ""
     }
