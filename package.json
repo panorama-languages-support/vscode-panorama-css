@@ -26,6 +26,11 @@
                 "language": "css",
                 "scopeName": "panoramasource.css",
                 "path": "./syntaxes/panorama_css.tmLanguage.json"
+            },
+            {
+                "language": "scss",
+                "scopeName": "panoramasource.css.scss",
+                "path": "./syntaxes/panorama_scss.tmLanguage.json"
             }
         ],
         "css": {
