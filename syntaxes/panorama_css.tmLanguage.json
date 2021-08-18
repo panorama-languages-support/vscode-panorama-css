@@ -1,7 +1,7 @@
 {
 	"information_for_contributors": [
-		"This file contains the grammar for the subset of CSS used by CS:GO's UI framework, Panorama.",
-		"Additions/changes should only occur to fix bugs or add a new property introduced by Valve.",
+		"This file contains the grammar for the subset of CSS introduced and used by CS:GO's UI framework, Panorama.",
+		"Additions/changes should only occur to fix bugs or add a new property/tag/etc. introduced by Valve or Chaos Initiative.",
 		"This file has been converted from https://github.com/microsoft/vscode/blob/main/extensions/css/syntaxes/css.tmLanguage.json"
 	],
 	"version": "0.2.2",
