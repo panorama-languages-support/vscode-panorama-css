@@ -1,8 +1,28 @@
-# Panorama CSS Support
+<div align="center">
+  <img src="icon.png" alt="" />
+</div>
 
-VS Code support for Panorama's subset of CSS3, using custom tmLanguage grammars and [CSS custom data](https://github.com/microsoft/vscode-custom-data). For Panorama CSS documentation, see the [VDC page](https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties).
+<h2 align="center">This VS Code extension provides support for Panorama's subset of CSS3.</h2>
 
-[Check out the VS Code extension!](https://marketplace.visualstudio.com/items?itemName=braemie.panorama-css)
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=braemie.panorama-css">
+    <img src="https://vsmarketplacebadges.dev/version-short/braemie.panorama-css.svg" style="display: inline-block" />
+  </a>
+
+  <a href="https://marketplace.visualstudio.com/items?itemName=braemie.panorama-css" style="margin-left:10px">
+    <img src="https://vsmarketplacebadges.dev/installs/braemie.panorama-css.svg" style="display: inline-block" />
+  </a>
+
+  <a href="https://gitlicense.com/license/braem/vscode-panorama-css" style="margin-left:10px">
+    <img src="https://gitlicense.com/badge/braem/vscode-panorama-css" style="display: inline-block" />
+  </a>
+
+  <a href="https://www.buymeacoffee.com/brae" title="Buy me a coffee" style="margin-left:10px">
+    <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-gray?logo=buy-me-a-coffee&style=flat" alt="Buy me a coffee" style="display: inline-block" />
+  </a>
+</p>
+
+[Panorama](https://developer.valvesoftware.com/wiki/Panorama) is UI framework developed and used by Valve used for many source games including CS:GO and Dota 2. For Panorama CSS documentation, see the [VDC page](https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties).
 
 ## Important Caveats
 
