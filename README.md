@@ -17,8 +17,8 @@
     <img src="https://gitlicense.com/badge/braem/vscode-panorama-css" style="display: inline-block" />
   </a>
 
-  <a href="https://www.buymeacoffee.com/brae" title="Buy me a coffee" style="margin-left:10px">
-    <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-gray?logo=buy-me-a-coffee&style=flat" alt="Buy me a coffee" style="display: inline-block" />
+  <a href="https://www.buymeacoffee.com/brae" title="Buy me a ko-fi" style="margin-left:10px">
+    <img src="https://img.shields.io/badge/Donate-$1-purple?logo=ko-fi&style=flat" alt="Buy me a ko-fi" style="display: inline-block" />
   </a>
 </p>
 
