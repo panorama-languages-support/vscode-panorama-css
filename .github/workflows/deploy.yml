@@ -1,10 +1,10 @@
 on:
   release:
-    types: [published]
+    types: [ published ]
 
 name: Deploy Extension
 jobs:
-  deploy:
+  deploy_extension:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
