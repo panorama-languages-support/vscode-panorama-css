@@ -6,11 +6,11 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=braemie.panorama-css">
-    <img src="https://vsmarketplacebadges.dev/version-short/braemie.panorama-css.svg" style="display: inline-block" />
+    <img src="https://vsmarketplacebadges.dev/version-short/braemie.panorama-css.png" style="display: inline-block" />
   </a>
 
   <a href="https://marketplace.visualstudio.com/items?itemName=braemie.panorama-css" style="margin-left:10px">
-    <img src="https://vsmarketplacebadges.dev/installs/braemie.panorama-css.svg" style="display: inline-block" />
+    <img src="https://vsmarketplacebadges.dev/installs/braemie.panorama-css.png" style="display: inline-block" />
   </a>
 
   <a href="https://gitlicense.com/license/braem/vscode-panorama-css" style="margin-left:10px">
