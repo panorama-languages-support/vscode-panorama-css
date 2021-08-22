@@ -2,7 +2,7 @@
     "name": "panorama-css",
     "displayName": "Panorama CSS Support",
     "description": "Support for the Panorama subset of CSS3.",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "publisher": "braemie",
     "author": {
         "name": "Brae Stoltz",
