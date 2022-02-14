@@ -156,36 +156,12 @@
         },
         "snippets": [
             {
-                "language": "panoscss",
-                "path": "./snippets/-s2-mix-blend-mode.json"
-            },
-            {
-                "language": "panoscss",
+                "language": "panocss",
                 "path": "./snippets/gradient.json"
             },
             {
                 "language": "panoscss",
-                "path": "./snippets/flow-children.json"
-            },
-            {
-                "language": "panoscss",
-                "path": "./snippets/misc.json"
-            },
-            {
-                "language": "panoscss",
-                "path": "./snippets/-s2-mix-blend-mode.json"
-            },
-            {
-                "language": "panoscss",
                 "path": "./snippets/gradient.json"
-            },
-            {
-                "language": "panoscss",
-                "path": "./snippets/flow-children.json"
-            },
-            {
-                "language": "panoscss",
-                "path": "./snippets/misc.json"
             }
         ],
         "configuration": {
