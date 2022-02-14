@@ -10,23 +10,18 @@ export function getCustomDataSource(toDispose: Disposable[], contextURI: Uri) {
 	let pathsInWorkspace = getCustomDataPathsInAllWorkspaces();
 	let pathsInExtensions = getCustomDataPathsFromAllExtensions();
 
-	const defaultDataPath = Utils.joinPath(contextURI, 'data/panorama.css-data.json').toString();
-	ensureDefaultData(pathsInWorkspace, pathsInExtensions, defaultDataPath);
-
 	const onChange = new EventEmitter<void>();
 
 	toDispose.push(extensions.onDidChange(_ => {
 		const newPathsInExtensions = getCustomDataPathsFromAllExtensions();
 		if (newPathsInExtensions.length !== pathsInExtensions.length || !newPathsInExtensions.every((val, idx) => val === pathsInExtensions[idx])) {
 			pathsInExtensions = newPathsInExtensions;
-			ensureDefaultData(pathsInWorkspace, pathsInExtensions, defaultDataPath);
 			onChange.fire();
 		}
 	}));
 	toDispose.push(workspace.onDidChangeConfiguration(e => {
 		if (e.affectsConfiguration('panocss.customData')) {
 			pathsInWorkspace = getCustomDataPathsInAllWorkspaces();
-			ensureDefaultData(pathsInWorkspace, pathsInExtensions, defaultDataPath);
 			onChange.fire();
 		}
 	}));
@@ -41,11 +36,6 @@ export function getCustomDataSource(toDispose: Disposable[], contextURI: Uri) {
 	};
 }
 
-function ensureDefaultData(pathsInWorkspace: string[], pathsInExtensions: string[], defaultDataPath: string): void {
-	// make sure we have at least our default data, as we are completely overriding the default data provider
-	if (pathsInExtensions.length === 0 && pathsInWorkspace.length === 0)
-		pathsInExtensions.push(defaultDataPath);
-}
 
 function getCustomDataPathsInAllWorkspaces(): string[] {
 	const workspaceFolders = workspace.workspaceFolders;
