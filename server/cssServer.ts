@@ -198,8 +198,7 @@ export function startServer(connection: Connection, runtime: RuntimeEnvironment)
 	function updateDataProviders(dataPaths: string[]) {
 		dataProvidersReady = fetchDataProviders(dataPaths, requestService).then(customDataProviders => {
 			for (const lang in languageServices) {
-				// do not use default data provider so we can completely override data
-				languageServices[lang].setDataProviders(false, customDataProviders);
+				languageServices[lang].setDataProviders(true, customDataProviders);
 			}
 		});
 	}
