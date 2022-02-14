@@ -7,7 +7,7 @@ import { RequestService } from '../requests';
 import { URI as Uri } from 'vscode-uri';
 
 import * as fs from 'fs';
-import { FileType } from 'vscode-css-languageservice';
+import { FileType } from '../../vscode-panorama-css-languageservice/src/cssLanguageService';
 
 export function getNodeFSRequestService(): RequestService {
 	function ensureFileUri(location: string) {

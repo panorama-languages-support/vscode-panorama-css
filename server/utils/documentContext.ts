@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { DocumentContext } from 'vscode-css-languageservice';
+import { DocumentContext } from '../../vscode-panorama-css-languageservice/src/cssLanguageService';
 import { endsWith, startsWith } from '../utils/strings';
 import { WorkspaceFolder } from 'vscode-languageserver';
 import { Utils, URI } from 'vscode-uri';
