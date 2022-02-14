@@ -7,7 +7,7 @@ import {
 	Connection, TextDocuments, InitializeParams, InitializeResult, ServerCapabilities, ConfigurationRequest, WorkspaceFolder, TextDocumentSyncKind, NotificationType, Disposable
 } from 'vscode-languageserver';
 import { URI } from 'vscode-uri';
-import { getCSSLanguageService, getSCSSLanguageService, LanguageSettings, LanguageService, Stylesheet, TextDocument, Position } from 'vscode-css-languageservice';
+import { getCSSLanguageService, getSCSSLanguageService, LanguageSettings, LanguageService, Stylesheet, TextDocument, Position } from '../vscode-panorama-css-languageservice/src/cssLanguageService';
 import { getLanguageModelCache } from './languageModelCache';
 import { formatError, runSafeAsync } from './utils/runner';
 import { getDocumentContext } from './utils/documentContext';

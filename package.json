@@ -33,6 +33,7 @@
     },
     "main": "out/client.js",
     "scripts": {
+        "postinstall": "cd ./vscode-panorama-css-languageservice/ && yarn",
         "compile": "node esbuild.js",
         "watch": "tsc -b -w"
     },
@@ -663,7 +664,6 @@
     "dependencies": {
         "vscode-languageclient": "^7.0.0",
         "vscode-languageserver": "7.0.0",
-        "vscode-css-languageservice": "5.1.8",
         "vscode-nls": "^5.0.0",
         "vscode-uri": "^3.0.3"
     },
