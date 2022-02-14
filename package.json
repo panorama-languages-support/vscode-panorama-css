@@ -17,59 +17,663 @@
     ],
     "icon": "icon.png",
     "license": "MIT",
+    "activationEvents": [
+        "onLanguage:panocss",
+        "onLanguage:panoscss",
+        "onCommand:_panocss.applyCodeAction"
+    ],
+    "capabilities": {
+        "virtualWorkspaces": true,
+        "untrustedWorkspaces": {
+            "supported": true
+        }
+    },
     "engines": {
-        "vscode": "^1.28.0"
+      "vscode": "^1.40.0"
+    },
+    "main": "out/client.js",
+    "scripts": {
+        "compile": "node esbuild.js",
+        "watch": "tsc -b -w"
     },
     "contributes": {
+        "languages": [
+            {
+                "id": "panocss",
+                "aliases": [
+                    "Panorama CSS",
+                    "panocss"
+                ],
+                "extensions": [
+                    ".css"
+                ],
+                "mimetypes": [
+                    "text/panocss"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "panoscss",
+                "aliases": [
+                    "Panorama SCSS",
+                    "panoscss"
+                ],
+                "extensions": [
+                    ".scss"
+                ],
+                "mimetypes": [
+                    "text/panoscss"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
         "grammars": [
             {
-                "language": "css",
+                "language": "panocss",
                 "scopeName": "panoramasource.css",
                 "path": "./syntaxes/panorama_css.tmLanguage.json"
             },
             {
-                "language": "scss",
+                "language": "panoscss",
                 "scopeName": "panoramasource.css.scss",
                 "path": "./syntaxes/panorama_scss.tmLanguage.json"
             }
         ],
         "css": {
-            "customData": [ "./data/panorama.css-data.json" ]
+            "enable": false,
+            "trace.server": "off",
+            "customData": [],
+            "completion": {
+                "triggerPropertyValueCompletion": false,
+                "completePropertyWithSemicolon": false
+            },
+            "validate": false,
+            "colorDecorators.enable": false,
+            "hover": {
+                "documentation": false,
+                "references": false
+            },
+            "lint": {
+                "compatibleVendorPrefixes": "ignore",
+                "vendorPrefix": "ignore",
+                "duplicateProperties": "ignore",
+                "emptyRules": "ignore",
+                "importStatement": "ignore",
+                "boxModel": "ignore",
+                "universalSelector": "ignore",
+                "zeroUnits": "ignore",
+                "fontFaceProperties": "ignore",
+                "hexColorLength": "ignore",
+                "argumentsInColorFunction": "ignore",
+                "unknownProperties": "ignore",
+                "validProperties": "ignore",
+                "ieHack": "ignore",
+                "unknownVendorSpecificProperties": "ignore",
+                "propertyIgnoredDueToDisplay": "ignore",
+                "important": "ignore",
+                "float": "ignore",
+                "idSelector": "ignore",
+                "unknownAtRules": "ignore"
+            }
+        },
+        "scss": {
+            "enable": false,
+            "trace.server": "off",
+            "customData": [],
+            "completion": {
+                "triggerPropertyValueCompletion": false,
+                "completePropertyWithSemicolon": false
+            },
+            "validate": false,
+            "colorDecorators.enable": false,
+            "hover": {
+                "documentation": false,
+                "references": false
+            },
+            "lint": {
+                "compatibleVendorPrefixes": "ignore",
+                "vendorPrefix": "ignore",
+                "duplicateProperties": "ignore",
+                "emptyRules": "ignore",
+                "importStatement": "ignore",
+                "boxModel": "ignore",
+                "universalSelector": "ignore",
+                "zeroUnits": "ignore",
+                "fontFaceProperties": "ignore",
+                "hexColorLength": "ignore",
+                "argumentsInColorFunction": "ignore",
+                "unknownProperties": "ignore",
+                "validProperties": "ignore",
+                "ieHack": "ignore",
+                "unknownVendorSpecificProperties": "ignore",
+                "propertyIgnoredDueToDisplay": "ignore",
+                "important": "ignore",
+                "float": "ignore",
+                "idSelector": "ignore",
+                "unknownAtRules": "ignore"
+            }
         },
         "snippets": [
             {
-                "language": "css",
+                "language": "panoscss",
                 "path": "./snippets/-s2-mix-blend-mode.json"
             },
             {
-                "language": "css",
+                "language": "panoscss",
                 "path": "./snippets/gradient.json"
             },
             {
-                "language": "css",
+                "language": "panoscss",
                 "path": "./snippets/flow-children.json"
             },
             {
-                "language": "css",
+                "language": "panoscss",
                 "path": "./snippets/misc.json"
             },
             {
-                "language": "scss",
+                "language": "panoscss",
                 "path": "./snippets/-s2-mix-blend-mode.json"
             },
             {
-                "language": "scss",
+                "language": "panoscss",
                 "path": "./snippets/gradient.json"
             },
             {
-                "language": "scss",
+                "language": "panoscss",
                 "path": "./snippets/flow-children.json"
             },
             {
-                "language": "scss",
+                "language": "panoscss",
                 "path": "./snippets/misc.json"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Panorama CSS",
+            "properties": {
+                "panocss.enable": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "panocss.trace.server": {
+                    "type": "string",
+                    "scope": "window",
+                    "enum": [
+                        "off",
+                        "messages",
+                        "verbose"
+                    ],
+                    "default": "off",
+                    "description": "Traces the communication between VS Code and the Panorama CSS language server"
+                },
+                "panocss.customData": {
+                    "type": "array",
+                    "markdownDescription": "A list of relative file paths pointing to JSON files following the [custom data format](https://github.com/microsoft/vscode-css-languageservice/blob/master/docs/customData.md).\n\nCustom data is loaded on startup to enhance Panorama CSS support for custom CSS properties, at directives, pseudo classes and pseudo elements you specify in the JSON files.\n\nThe file paths are relative to workspace and only workspace folder settings are considered",
+                    "default": [],
+                    "items": {
+                        "type": "string"
+                    },
+                    "scope": "resource"
+                },
+                "panocss.completion.triggerPropertyValueCompletion": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "By default, triggers property value completion after selecting a Panorama CSS property. Use this setting to disable this behavior"
+                },
+                "panocss.completion.completePropertyWithSemicolon": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "Insert semicolon at end of line when completing Panorama CSS properties"
+                },
+                "panocss.validate": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "Controls Panorama SCSS validation and problem severities"
+                },
+                "panocss.colorDecorators.enable": {
+                    "type": "boolean",
+                    "scope": "window",
+                    "default": true
+                },
+                "panocss.hover.documentation": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "Show tag and attribute documentation in Panorama SCSS hovers"
+                },
+                "panocss.hover.references": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "Show references to VDC in Panorama SCSS hovers"
+                },
+                "panocss.lint.duplicateProperties": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Do not use duplicate style definitions"
+                },
+                "panocss.lint.emptyRules": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Do not use empty rulesets"
+                },
+                "panocss.lint.importStatement": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "description": "Import statements do not load in parallel"
+                },
+                "panocss.lint.boxModel": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "markdownDescription": "Do not use `width` or `height` when using `padding` or `border`"
+                },
+                "panocss.lint.universalSelector": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "markdownDescription": "The universal selector (`*`) is known to be slow"
+                },
+                "panocss.lint.zeroUnits": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "No unit for zero needed"
+                },
+                "panocss.lint.fontFaceProperties": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "markdownDescription": "`@font-face` rule must define `src` and `font-family` properties"
+                },
+                "panocss.lint.hexColorLength": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "error",
+                    "description": "Hex colors must consist of three or six hex numbers"
+                },
+                "panocss.lint.argumentsInColorFunction": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "error",
+                    "description": "Invalid number of parameters"
+                },
+                "panocss.lint.unknownProperties": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Unknown property"
+                },
+                "panocss.lint.validProperties": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string"
+                    },
+                    "scope": "resource",
+                    "default": [],
+                    "description": "A list of properties that are not validated against the `unknownProperties` rule"
+                },
+                "panocss.lint.unknownVendorSpecificProperties": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "description": "Unknown vendor specific property"
+                },
+                "panocss.lint.propertyIgnoredDueToDisplay": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "markdownDescription": "Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect"
+                },
+                "panocss.lint.important": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "markdownDescription": "Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored"
+                },
+                "panocss.lint.float": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "markdownDescription": "Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes"
+                },
+                "panocss.lint.idSelector": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Selectors should not contain IDs because these rules are too tightly coupled with the HTML"
+                },
+                "panocss.lint.unknownAtRules": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Unknown at-rule"
+                },
+                "panoscss.completion.triggerPropertyValueCompletion": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "By default, triggers property value completion after selecting a CSS property. Use this setting to disable this behavior"
+                },
+                "panoscss.completion.completePropertyWithSemicolon": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "Insert semicolon at end of line when completing Panorama CSS properties"
+                },
+                "panoscss.validate": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "Controls Panorama SCSS validation and problem severities"
+                },
+                "panoscss.colorDecorators.enable": {
+                    "type": "boolean",
+                    "scope": "window",
+                    "default": true
+                },
+                "panoscss.hover.documentation": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "Show tag and attribute documentation in Panorama SCSS hovers"
+                },
+                "panoscss.hover.references": {
+                    "type": "boolean",
+                    "scope": "resource",
+                    "default": true,
+                    "description": "Show references to VDC in Panorama SCSS hovers"
+                },
+                "panoscss.lint.duplicateProperties": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Do not use duplicate style definitions"
+                },
+                "panoscss.lint.emptyRules": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Do not use empty rulesets"
+                },
+                "panoscss.lint.importStatement": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "description": "Import statements do not load in parallel"
+                },
+                "panoscss.lint.boxModel": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "markdownDescription": "Do not use `width` or `height` when using `padding` or `border`"
+                },
+                "panoscss.lint.universalSelector": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "markdownDescription": "The universal selector (`*`) is known to be slow"
+                },
+                "panoscss.lint.zeroUnits": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "description": "No unit for zero needed"
+                },
+                "panoscss.lint.fontFaceProperties": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "markdownDescription": "`@font-face` rule must define `src` and `font-family` properties"
+                },
+                "panoscss.lint.hexColorLength": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "error",
+                    "description": "Hex colors must consist of three or six hex numbers"
+                },
+                "panoscss.lint.argumentsInColorFunction": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "error",
+                    "description": "Invalid number of parameters"
+                },
+                "panoscss.lint.unknownProperties": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Unknown property"
+                },
+                "panoscss.lint.validProperties": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string"
+                    },
+                    "scope": "resource",
+                    "default": [],
+                    "description": "A list of properties that are not validated against the `unknownProperties` rule"
+                },
+                "panoscss.lint.unknownVendorSpecificProperties": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "description": "Unknown vendor specific property"
+                },
+                "panoscss.lint.propertyIgnoredDueToDisplay": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "markdownDescription": "Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect"
+                },
+                "panoscss.lint.important": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "markdownDescription": "Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored"
+                },
+                "panoscss.lint.float": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "ignore",
+                    "markdownDescription": "Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes"
+                },
+                "panoscss.lint.idSelector": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Selectors should not contain IDs because these rules are too tightly coupled with the HTML"
+                },
+                "panoscss.lint.unknownAtRules": {
+                    "type": "string",
+                    "scope": "resource",
+                    "enum": [
+                        "ignore",
+                        "warning",
+                        "error"
+                    ],
+                    "default": "warning",
+                    "description": "Unknown at-rule"
+                }
+            }
+        }
+    },
+    "dependencies": {
+        "vscode-languageclient": "^7.0.0",
+        "vscode-languageserver": "7.0.0",
+        "vscode-css-languageservice": "5.1.8",
+        "vscode-nls": "^5.0.0",
+        "vscode-uri": "^3.0.3"
+    },
+    "devDependencies": {
+        "@types/vscode": "1.64.0",
+        "@types/node": "12.12.0",
+        "typescript": "^4",
+        "esbuild": "^0.14.7",
+        "rimraf": "^3.0.2",
+        "ts-loader": "^8.0.7"
     },
     "categories": [
         "Programming Languages",
