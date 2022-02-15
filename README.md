@@ -22,16 +22,19 @@
   </a>
 </p>
 
-[Panorama](https://developer.valvesoftware.com/wiki/Panorama) is UI framework developed and used by Valve used for many source games including CS:GO and Dota 2. For Panorama CSS documentation, see the [VDC page](https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties).
+[Panorama](https://developer.valvesoftware.com/wiki/Panorama) is UI framework developed and used by Valve Software used for many source games including CS:GO, Dota 2, and Chaos Engine games. For CS:GO's Panorama CSS documentation, see the [VDC page](https://developer.valvesoftware.com/wiki/CSGO_Panorama_CSS_Properties).
 
-## Important Caveats
 
-1. This extension removes coloring for non-Panorama properties for both CSS and SCSS. Make sure to **enable it per-workspace!**
-2. No code completion for values introduced by Panorama apart from snippets, and in some cases misleading value completion where Panorama differs from W3C spec.
+## Disclaimer
+Nearly all of the client/server code here is directly carried over from vscode's built-in css extension [css-language-features](https://github.com/microsoft/vscode/tree/main/extensions/css-language-features) in order to connect to a forked version of [vscode-css-languageservice](https://github.com/microsoft/vscode-css-languageservice).
+
+## Important Caveat
+
+> This extension removes coloring, autocompletion, validation, etc. for non-Panorama properties for both CSS and SCSS. Make sure to **enable it per-workspace!**
 
 ## Features
 
 - SCSS support for Chaos Engine
 - Coloring for CS:GO and Chaos Panorama panel names, properties, psuedo-selectors, etc.
-- Code completion for Panorama properties and pseudo-selectors, but not values
-- Snippets for gradient creation and other values
+- Code completion and validation
+- Snippets for easy gradient creation
