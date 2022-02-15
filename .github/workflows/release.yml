@@ -9,8 +9,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Run NPM CI
-        run: npm ci
+      - name: Install
+        run: yarn
+
+      - name: Compile
+        run: yarn compile
 
       - name: get-npm-version
         id: package-version
