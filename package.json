@@ -29,11 +29,11 @@
         }
     },
     "engines": {
-      "vscode": "^1.40.0"
+      "vscode": "^1.64.0"
     },
     "main": "out/client.js",
     "scripts": {
-        "postinstall": "cd ./vscode-panorama-css-languageservice/ && yarn",
+        "install-langserv": "git submodule update --init --recursive && cd ./vscode-panorama-css-languageservice/ && yarn",
         "compile": "node esbuild.js",
         "watch": "tsc -b -w"
     },
