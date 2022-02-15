@@ -1,0 +1,39 @@
+on:
+  pull_request:
+    branches:
+      - main
+
+name: Build VSIX
+jobs:
+  manual_release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install
+        run: yarn
+
+      - name: Compile
+        run: yarn compile
+
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
+
+      - name: Package Extension (VSIX)
+        uses: lannonbr/vsce-action@master
+        with:
+          args: "package"
+
+      - name: Zip VSIX
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          path: panorama-css-${{ steps.package-version.outputs.current-version }}.vsix
+          filename: 'extension.zip'
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: VSIX
+          path: extension.zip
