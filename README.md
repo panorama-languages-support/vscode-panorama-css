@@ -17,7 +17,7 @@
     <img src="https://gitlicense.com/badge/braem/vscode-panorama-css" style="display: inline-block" />
   </a>
 
-  <a href="https://www.buymeacoffee.com/brae" title="Buy me a ko-fi" style="margin-left:10px">
+  <a href="https://ko-fi.com/braemie" title="Buy me a ko-fi ;p" style="margin-left:10px">
     <img src="https://img.shields.io/badge/Donate-$1-purple?logo=ko-fi&style=flat" alt="Buy me a ko-fi" style="display: inline-block" />
   </a>
 </p>
