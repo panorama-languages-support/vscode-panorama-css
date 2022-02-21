@@ -1,0 +1,9 @@
+{
+    "Panel Fetch": {
+        "prefix": "$(",
+        "body": [
+            "$('#${0:PanelID}');"
+        ],
+        "description": "Panorama panel fetch function."
+    }
+}

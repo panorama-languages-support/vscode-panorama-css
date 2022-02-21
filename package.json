@@ -29,7 +29,7 @@
         }
     },
     "engines": {
-      "vscode": "^1.64.0"
+        "vscode": "^1.64.0"
     },
     "main": "out/client.js",
     "scripts": {
@@ -165,11 +165,15 @@
         "snippets": [
             {
                 "language": "panocss",
-                "path": "./snippets/gradient.json"
+                "path": "./snippets/css/gradient.json"
             },
             {
                 "language": "panoscss",
-                "path": "./snippets/gradient.json"
+                "path": "./snippets/css/gradient.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/js/panel-fetch.json"
             }
         ],
         "configuration": {
