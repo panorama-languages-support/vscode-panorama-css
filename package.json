@@ -665,16 +665,17 @@
     ],
     "keywords": [
         "panorama",
+        "valve",
         "css",
         "scss"
     ],
     "bugs": {
-        "url": "https://github.com/braem/vscode-panorama-css/issues",
-        "email": "brae@momentum-mod.org"
+        "url": "https://github.com/panorama-languages-support/vscode-panorama-css/issues",
+        "email": "brae@braebie.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/braem/vscode-panorama-css"
+        "url": "https://github.com/panorama-languages-support/vscode-panorama-css"
     },
-    "homepage": "https://github.com/braem/vscode-panorama-css"
+    "homepage": "https://github.com/panorama-languages-support/vscode-panorama-css"
 }

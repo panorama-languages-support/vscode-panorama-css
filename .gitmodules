@@ -1,3 +1,3 @@
 [submodule "vscode-panorama-css-languageservice"]
 	path = vscode-panorama-css-languageservice
-	url = https://github.com/braem/vscode-panorama-css-languageservice.git
+	url = https://github.com/panorama-languages-support/vscode-panorama-css-languageservice.git

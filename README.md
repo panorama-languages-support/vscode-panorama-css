@@ -13,8 +13,8 @@
     <img src="https://vsmarketplacebadges.dev/installs/braemie.panorama-css.png" style="display: inline-block" />
   </a>
 
-  <a href="https://gitlicense.com/license/braem/vscode-panorama-css" style="margin-left:10px">
-    <img src="https://gitlicense.com/badge/braem/vscode-panorama-css" style="display: inline-block" />
+  <a href="https://gitlicense.com/license/panorama-languages-support/vscode-panorama-css" style="margin-left:10px">
+    <img src="https://gitlicense.com/badge/panorama-languages-support/vscode-panorama-css" style="display: inline-block" />
   </a>
 
   <a href="https://ko-fi.com/braemie" title="Buy me a ko-fi ;p" style="margin-left:10px">
@@ -40,4 +40,4 @@ Nearly all of the client/server code here is directly carried over from vscode's
 - Snippets for easy gradient creation
 
 ## JS Type Support How-to
-See https://github.com/braem/panorama-jsdoc-gen for information on how to generate javascript types for your respective game. This will provide autocomplete, hover, and other language features for your game's Panorama APIs and panel types.
+See https://github.com/panorama-languages-support/panorama-jsdoc-gen for information on how to generate javascript types for your respective game. This will provide autocomplete, hover, and other language features for your game's Panorama APIs and panel types.
