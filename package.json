@@ -51,7 +51,7 @@
                 "mimetypes": [
                     "text/panocss"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./language-configuration-css.json"
             },
             {
                 "id": "panoscss",
@@ -65,7 +65,7 @@
                 "mimetypes": [
                     "text/panoscss"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./language-configuration-scss.json"
             }
         ],
         "grammars": [
