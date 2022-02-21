@@ -38,3 +38,6 @@ Nearly all of the client/server code here is directly carried over from vscode's
 - Coloring for CS:GO and Chaos Panorama panel names, properties, psuedo-selectors, etc.
 - Code completion and validation
 - Snippets for easy gradient creation
+
+## JS Type Support How-to
+See https://github.com/braem/panorama-jsdoc-gen for information on how to generate javascript types for your respective game. This will provide autocomplete, hover, and other language features for your game's Panorama APIs and panel types.
