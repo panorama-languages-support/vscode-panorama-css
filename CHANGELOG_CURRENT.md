@@ -1,8 +1,11 @@
-## [0.4.0] - 2022-02-14
-### Changed
-- Panorama CSS/SCSS are now their own languages, which allows for better completion and validation
-- Lots of bloat removed so that only Panorama supported properties/selectors/etc. are present
-- Now Link to VDC and MDN (where applicable)
+## [0.4.1] - 2022-02-21
+### Added
+- Javascript snippet for Panorama's panel fetch function $()
+- Section on how to get Panorama JS type support
 
 ### Fixed
-- Properties in MDN and Panorama now show the appropriate Panorama-specific descriptions and a reference to VDC
+- Fixed line comment toggling not working and possibly other issues related to a missing language configuration
+
+### Changed
+- Added placeholder icons for Panorama CSS/SCSS languages
+  - Same as the package's icon for now (help wanted!)
